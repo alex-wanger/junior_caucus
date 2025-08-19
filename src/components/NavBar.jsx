@@ -31,10 +31,10 @@ const NavBar = ({ currentPage, setCurrentPage }) => {
   };
 
   const resourceItems = [
-    "Study Guides",
-    "Course Guides",
-    "Caucus Newsletters",
-    "SYWTBA Articles",
+    { name: "Study Guides", href: "/study-guides" },
+    { name: "Course Guides", href: "/course-guides" },
+    { name: "Caucus Newsletters", href: "/newsletters" },
+    { name: "SYWTBA Articles", href: "/sywtba-articles" },
   ];
 
   return (
@@ -86,11 +86,12 @@ const NavBar = ({ currentPage, setCurrentPage }) => {
                   <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
                     {resourceItems.map((item) => (
                       <a
-                        key={item}
-                        href="#"
+                        key={item.name}
+                        href={item.href}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-pink-50 hover:text-pink-500 transition-colors duration-200"
+                        onClick={() => setIsResourcesOpen(false)}
                       >
-                        {item}
+                        {item.name}
                       </a>
                     ))}
                   </div>
@@ -142,11 +143,12 @@ const NavBar = ({ currentPage, setCurrentPage }) => {
               </div>
               {resourceItems.map((item) => (
                 <a
-                  key={item}
-                  href="#"
+                  key={item.name}
+                  href={item.href}
                   className="block px-3 py-1 text-sm text-gray-600 hover:text-pink-500 transition-colors duration-200"
+                  onClick={() => setIsMenuOpen(false)}
                 >
-                  {item}
+                  {item.name}
                 </a>
               ))}
             </div>

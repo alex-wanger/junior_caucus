@@ -69,7 +69,7 @@ const ContactPage = () => {
               </h3>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/stuyjuniorcaucus/"
                   className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl"
                   aria-label="Follow us on Instagram"
                 >
