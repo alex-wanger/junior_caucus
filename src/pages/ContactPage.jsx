@@ -37,9 +37,7 @@ const ContactPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
             Contact Information
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Get in touch with us - we'd love to hear from you!
-          </p>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto"></p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">

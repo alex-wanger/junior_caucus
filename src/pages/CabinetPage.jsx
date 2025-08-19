@@ -11,10 +11,7 @@ const CabinetPage = () => {
           <h1 className="text-4xl md:text-5xl font-bold bg-purple-500 bg-clip-text text-transparent mb-4">
             Our Cabinet
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Meet the dedicated leaders working to make our organization
-            exceptional.
-          </p>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto"></p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border border-pink-100">
