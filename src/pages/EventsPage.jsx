@@ -26,9 +26,7 @@ const EventsPage = () => {
                 <h3 className="text-xl font-bold text-gray-800">
                   Upcoming Events
                 </h3>
-                <p className="text-gray-600">
-                  Don't miss out on what's coming next.
-                </p>
+                <p className="text-gray-600"></p>
               </div>
             </div>
             <div className="space-y-4">
@@ -54,9 +52,7 @@ const EventsPage = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-800">Past Events</h3>
-                <p className="text-gray-600">
-                  See what we've accomplished together.
-                </p>
+                <p className="text-gray-600"></p>
               </div>
             </div>
             <div className="space-y-4">
