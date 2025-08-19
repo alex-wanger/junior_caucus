@@ -2,35 +2,9 @@
 import React from "react";
 
 const EventsPage = () => {
-  const upcomingEvents = [
-    {
-      title: "Welcome Week Social",
-      date: "September 15, 2024 • 6:00 PM",
-      description: "Join us for food, games, and networking!",
-      bgColor: "bg-pink-50",
-      borderColor: "border-pink-200",
-    },
-    {
-      title: "Study Skills Workshop",
-      date: "September 22, 2024 • 3:00 PM",
-      description: "Learn effective study techniques and time management.",
-      bgColor: "bg-purple-50",
-      borderColor: "border-purple-200",
-    },
-  ];
+  const upcomingEvents = [{}, {}];
 
-  const pastEvents = [
-    {
-      title: "Spring Formal 2024",
-      date: "May 10, 2024",
-      description: "A memorable evening of celebration and connection.",
-    },
-    {
-      title: "Community Service Day",
-      date: "April 20, 2024",
-      description: "Gave back to our local community through volunteer work.",
-    },
-  ];
+  const pastEvents = [{}, {}];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-white py-12">
