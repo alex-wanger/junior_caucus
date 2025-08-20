@@ -1,4 +1,3 @@
-// pages/ContactPage.js
 import React from "react";
 import TransitBackground from "../components/TransitBackground";
 import { Mail, MapPin } from "lucide-react";
@@ -14,8 +13,14 @@ const InstagramIcon = () => (
 const ContactPage = () => {
   const contactInfo = [
     {
-      title: "General Inquiries",
-      email: "example@.edu",
+      title: "Mufei Yu",
+      email: "mufei.yu@stuysu.org",
+      bgColor: "bg-pink-50",
+      borderColor: "border-pink-200",
+    },
+    {
+      title: "Mitali Jhaveri",
+      email: "mitali.jhaveri@stuysu.org",
       bgColor: "bg-pink-50",
       borderColor: "border-pink-200",
     },
@@ -24,8 +29,14 @@ const ContactPage = () => {
   const locations = [
     {
       name: "Student Union",
-      address: "Room 205, Student Union Building",
-      hours: "Office Hours: Mon-Fri 9AM-5PM",
+      address: "Room 205, Student Union Room",
+      hours: "Office Hours: Mon-Fri 8AM-5PM",
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200",
+    },
+    {
+      name: "SU Website",
+      hours: "https://stuysu.org",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
     },
@@ -43,7 +54,7 @@ const ContactPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-pink-100">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-pink-100">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                 <Mail className="w-6 h-6 text-pink-500 mr-3" />
                 Contact Us
@@ -70,8 +81,10 @@ const ContactPage = () => {
                 <div className="flex space-x-4">
                   <a
                     href="https://www.instagram.com/stuyjuniorcaucus/"
-                    className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl p-3"
                     aria-label="Follow us on Instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <InstagramIcon />
                   </a>
@@ -79,7 +92,7 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl shadow-lg p-8 border border-purple-100">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-purple-100">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                 <MapPin className="w-6 h-6 text-purple-500 mr-3" />
                 Find Us
@@ -104,14 +117,23 @@ const ContactPage = () => {
                 <h3 className="font-semibold text-gray-800 mb-4">
                   Suggestion Box
                 </h3>
-                <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-6 border border-pink-200">
+                <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-4 border border-pink-200">
                   <p className="text-gray-700 mb-4">
                     Have ideas or feedback? We want to hear from you!
                   </p>
-                  <p className="text-gray-600 text-sm italic">
-                    Suggestion box form coming soon - stay tuned for ways to
-                    share your thoughts with us.
-                  </p>
+
+                  {/* Embedded Google Form */}
+                  <div className="bg-white rounded-lg shadow-inner overflow-hidden">
+                    <iframe
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSfIkr4TkUDjht4yqm5wT3zWBckFMMGDhpDrRkuf4RCmJH8-mw/viewform?embedded=true"
+                      width="100%"
+                      height="600"
+                      title="Suggestion Box Form"
+                      className="rounded-lg"
+                    >
+                      Loading form...
+                    </iframe>
+                  </div>
                 </div>
               </div>
             </div>

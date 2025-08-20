@@ -1,4 +1,3 @@
-// pages/JPromPage.js
 import React from "react";
 import TransitBackground from "../components/TransitBackground";
 
@@ -12,30 +11,32 @@ const JPromPage = ({ setCurrentPage }) => {
               JProm
             </h1>
 
-            <div className="bg-white rounded-2xl shadow-xl p-12 border border-pink-100 max-w-3xl mx-auto">
-              <div className="w-32 h-32 bg-gradient-to-r from-pink-400 to-purple-600 rounded-full mx-auto mb-8 flex items-center justify-center animate-pulse"></div>
-
+            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-12 border border-pink-100 max-w-3xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">
-                Coming Soon!
+                Junior Prom
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Consectetur recusandae architecto nihil laborum natus similique
-                necessitatibus eum perferendis tempora impedit, expedita cumque
-                officia. Sapiente corrupti rerum eum non necessitatibus
-                aspernatur.
-              </p>
 
-              <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-6 border border-pink-200">
-                <p className="text-gray-700 italic">"JPROM"</p>
-              </div>
+              <img
+                src="/disco.png"
+                alt="JProm"
+                className="w-64 h-64 mx-auto mb-6"
+              />
+
+              <p className="text-xl text-gray-600 mb-8">
+                Celebrate the annual junior class dance with us! Enjoy an
+                evening full of music, dancing, and fun. This end of the year
+                event brings classmates together, fosters school spirit, and
+                creates lasting memories through fun activities, themed
+                decorations, and a vibrant atmosphere for everyone to
+                experience.
+              </p>
 
               <div className="mt-8">
                 <button
                   onClick={() => setCurrentPage("contact")}
                   className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                 >
-                  Stay Updated
+                  Coming Soon
                 </button>
               </div>
             </div>

@@ -9,7 +9,7 @@ const CabinetPage = () => {
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold bg-purple-500 bg-clip-text text-transparent mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
               Our Cabinet
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto"></p>

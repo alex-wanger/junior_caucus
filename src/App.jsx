@@ -1,27 +1,30 @@
 // App.jsx
-import React, { useState } from 'react';
-import NavBar from './components/NavBar';
-import HomePage from './pages/HomePage';
-import CabinetPage from './pages/CabinetPage';
-import JPromPage from './pages/JPromPage';
-import EventsPage from './pages/EventsPage';
-import ContactPage from './pages/ContactPage';
+import React, { useState } from "react";
+import NavBar from "./components/NavBar";
+import HomePage from "./pages/HomePage";
+import CabinetPage from "./pages/CabinetPage";
+import JPromPage from "./pages/JPromPage";
+import EventsPage from "./pages/EventsPage";
+import ContactPage from "./pages/ContactPage";
+import ResourcesPage from "./pages/ResourcesPage";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState("home");
 
   const renderPage = () => {
     switch (currentPage) {
-      case 'home':
+      case "home":
         return <HomePage setCurrentPage={setCurrentPage} />;
-      case 'cabinet':
+      case "cabinet":
         return <CabinetPage />;
-      case 'jprom':
+      case "jprom":
         return <JPromPage setCurrentPage={setCurrentPage} />;
-      case 'events':
+      case "events":
         return <EventsPage />;
-      case 'contact':
+      case "contact":
         return <ContactPage />;
+      case "resources":
+        return <ResourcesPage setCurrentPage={setCurrentPage} />;
       default:
         return <HomePage setCurrentPage={setCurrentPage} />;
     }
@@ -30,9 +33,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-white">
       <NavBar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <main>
-        {renderPage()}
-      </main>
+      <main>{renderPage()}</main>
     </div>
   );
 };
