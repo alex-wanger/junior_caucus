@@ -98,7 +98,7 @@ const ResourcesPage = ({ setCurrentPage }) => {
 
           {/* Additional Resources Section */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-1 gap-8">
               {/* <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-400">
                 <h3 className="text-lg font-bold text-gray-800 mb-3">
                   Quick Tips
@@ -123,22 +123,6 @@ const ResourcesPage = ({ setCurrentPage }) => {
                   className="text-indigo-500 hover:text-indigo-600 font-semibold text-sm transition-colors"
                 >
                   Contact Us →
-                </button>
-              </div>
-
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-teal-400">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
-                  Contribute
-                </h3>
-                <p className="text-gray-600 text-sm mb-3">
-                  Have great study materials to share? Help your classmates
-                  succeed!
-                </p>
-                <button
-                  onClick={() => handleNavigation("contact")}
-                  className="text-teal-500 hover:text-teal-600 font-semibold text-sm transition-colors"
-                >
-                  Share Resources →
                 </button>
               </div>
             </div>
