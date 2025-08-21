@@ -113,15 +113,15 @@ const ResourcesPage = ({ setCurrentPage }) => {
               </div> */}
 
               <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-indigo-400">
-                <h3 className="text-lg font-bold text-gray-800 mb-3">
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
                   Need Help?
                 </h3>
-                <p className="text-gray-600 text-sm mb-3">
+                <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
                   Can't find what you're looking for? Reach out to us!
                 </p>
                 <button
                   onClick={() => handleNavigation("contact")}
-                  className="text-indigo-500 hover:text-indigo-600 font-semibold text-sm transition-colors"
+                  className="text-indigo-500 hover:text-indigo-600 font-semibold mt-4 transition-colors"
                 >
                   Contact Us →
                 </button>
