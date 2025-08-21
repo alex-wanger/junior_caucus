@@ -1,5 +1,6 @@
 import React from "react";
 import TransitBackground from "../components/TransitBackground";
+import Footer from "../components/Footer";
 
 const HomePage = ({ setCurrentPage }) => {
   const handleNavigation = (page) => {
@@ -50,9 +51,9 @@ const HomePage = ({ setCurrentPage }) => {
                   JPROM
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
-                  Get ready for the highlight of junior year! Find updates on
-                  themes, ticket info, and the yacht that make JProm an
-                  unforgettable night.
+                  Get ready for the highlight of our junior year! Find updates
+                  on themes, ticket info, and the yacht that make JProm an
+                  unforgettable experience.
                 </p>
                 <div className="mt-4 text-purple-500 font-semibold">
                   Click to explore →
@@ -93,6 +94,7 @@ const HomePage = ({ setCurrentPage }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </TransitBackground>
   );
 };
