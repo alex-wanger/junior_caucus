@@ -1,5 +1,6 @@
 import React from "react";
 import TransitBackground from "../components/TransitBackground";
+import Footer from "../components/Footer";
 
 const JPromPage = ({ setCurrentPage }) => {
   return (
