@@ -19,8 +19,8 @@ const Footer = () => {
             </h2>
             <p className="text-gray-600 mt-2">
               Website built by{" "}
-              <a href="https://github.com/alex-wanger">Alex Wang</a> with help
-              from Mufei Yu and Chloe Dech.
+              <a href="https://github.com/alex-wanger">Alex Wang</a> with design
+              help from Mufei Yu and Chloe Dech.
             </p>
           </div>
 
