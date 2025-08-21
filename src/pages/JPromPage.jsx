@@ -43,6 +43,7 @@ const JPromPage = ({ setCurrentPage }) => {
           </div>
         </div>
       </div>
+      <Footer />
     </TransitBackground>
   );
 };

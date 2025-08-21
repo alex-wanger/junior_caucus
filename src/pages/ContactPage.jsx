@@ -1,6 +1,7 @@
 import React from "react";
 import TransitBackground from "../components/TransitBackground";
 import { Mail, MapPin } from "lucide-react";
+import Footer from "../components/Footer";
 
 const InstagramIcon = () => (
   <img
@@ -116,6 +117,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </TransitBackground>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import TransitBackground from "../components/TransitBackground";
 import { Mail } from "lucide-react";
+import Footer from "../components/Footer";
 
 const SuggestionBoxPage = () => {
   return (
@@ -42,6 +43,7 @@ const SuggestionBoxPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </TransitBackground>
   );
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TransitBackground from "../components/TransitBackground";
+import Footer from "../components/Footer";
 
 const CabinetPage = () => {
   const cabinetMembers = [
@@ -146,6 +147,7 @@ const CabinetPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </TransitBackground>
   );
 };

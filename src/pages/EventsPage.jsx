@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TransitBackground from "../components/TransitBackground";
+import Footer from "../components/Footer";
 
 const EventsPage = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -241,6 +242,7 @@ const EventsPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </TransitBackground>
   );
 };
