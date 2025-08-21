@@ -48,7 +48,7 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
-              Contact Information
+              Contact
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto"></p>
           </div>
@@ -111,30 +111,6 @@ const ContactPage = () => {
                     <p className="text-gray-600 text-sm">{location.hours}</p>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-8">
-                <h3 className="font-semibold text-gray-800 mb-4">
-                  Suggestion Box
-                </h3>
-                <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-4 border border-pink-200">
-                  <p className="text-gray-700 mb-4">
-                    Have ideas or feedback? We want to hear from you!
-                  </p>
-
-                  {/* Embedded Google Form */}
-                  <div className="bg-white rounded-lg shadow-inner overflow-hidden">
-                    <iframe
-                      src="https://docs.google.com/forms/d/e/1FAIpQLSfIkr4TkUDjht4yqm5wT3zWBckFMMGDhpDrRkuf4RCmJH8-mw/viewform?embedded=true"
-                      width="100%"
-                      height="600"
-                      title="Suggestion Box Form"
-                      className="rounded-lg"
-                    >
-                      Loading form...
-                    </iframe>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

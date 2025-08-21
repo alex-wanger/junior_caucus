@@ -12,17 +12,17 @@ const ResourcesPage = ({ setCurrentPage }) => {
 
   return (
     <TransitBackground>
-      <div className="min-h-screen relative">
-        {/* Content */}
-        <div className="relative z-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-500 text-center">
-              <h1 className="text-4xl font-bold mb-2">Academic Resources</h1>
-              <p>
-                Your one-stop destination for study materials, course guides,
-                and academic support to excel in junior year!
-              </p>
-            </div>
+      <div className="py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-8">
+              Resources
+            </h1>
+
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+              Your one-stop destination for study materials, course guides, and
+              academic support to excel in junior year!
+            </p>
           </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -128,9 +128,10 @@ const ResourcesPage = ({ setCurrentPage }) => {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Mission Statement Section */}
-        {/* <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Mission Statement Section */}
+      {/* <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-500 text-center">
             <h2 className="text-3xl font-bold mb-4">Academic Excellence</h2>
             <p className="text-gray-700">
@@ -143,7 +144,6 @@ const ResourcesPage = ({ setCurrentPage }) => {
             </p>
           </div>
         </div> */}
-      </div>
     </TransitBackground>
   );
 };

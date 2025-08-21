@@ -7,6 +7,7 @@ import JPromPage from "./pages/JPromPage";
 import EventsPage from "./pages/EventsPage";
 import ContactPage from "./pages/ContactPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import SuggestionBoxPage from "./pages/SuggestionBoxPage";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
@@ -23,8 +24,10 @@ const App = () => {
         return <EventsPage />;
       case "contact":
         return <ContactPage />;
+      case "suggestion":
+        return <SuggestionBoxPage />;
       case "resources":
-        return <ResourcesPage setCurrentPage={setCurrentPage} />;
+        return <ResourcesPage />;
       default:
         return <HomePage setCurrentPage={setCurrentPage} />;
     }

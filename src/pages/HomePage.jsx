@@ -14,7 +14,7 @@ const HomePage = ({ setCurrentPage }) => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-500 text-center">
               <h1 className="text-4xl font-bold mb-2">
-                Welcome to the Junior Caucus!
+                Welcome to Stuyvesant's Junior Caucus!
               </h1>
               <p>
                 New York runs on the the subway, but your junior year runs on
@@ -37,7 +37,7 @@ const HomePage = ({ setCurrentPage }) => {
                   support our class, ease the stress of junior year, and bring
                   our community together.
                 </p>
-                <div className="mt-4 text-pink-500 opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                <div className="mt-4 text-pink-500 font-semibold">
                   Click to explore →
                 </div>
               </div>
@@ -54,7 +54,7 @@ const HomePage = ({ setCurrentPage }) => {
                   themes, ticket info, and the yacht that make JProm an
                   unforgettable night.
                 </p>
-                <div className="mt-4 text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                <div className="mt-4 text-purple-500 font-semibold">
                   Click to explore →
                 </div>
               </div>
@@ -71,7 +71,7 @@ const HomePage = ({ setCurrentPage }) => {
                   to support you through academics, career guidance, and
                   everything in between.
                 </p>
-                <div className="mt-4 text-pink-600 opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
+                <div className="mt-4 text-pink-600 font-semibold">
                   Click to explore →
                 </div>
               </div>

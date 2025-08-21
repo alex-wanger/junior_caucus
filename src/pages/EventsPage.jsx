@@ -124,7 +124,7 @@ const EventsPage = () => {
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Stay connected with all Junior Caucus activities and important
-              dates
+              dates.
             </p>
           </div>
 
