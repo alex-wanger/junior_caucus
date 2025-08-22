@@ -11,7 +11,7 @@ const TransitBackground = ({ children, overlayOpacity = "85" }) => {
         }}
       >
         {/* Overlay for better text readability */}
-        <div className={`absolute inset-0 bg-white/${overlayOpacity}`}></div>
+        <div className="absolute inset-0 bg-white/85"></div>
       </div>
 
       {/* Content */}

@@ -41,6 +41,12 @@ const ContactPage = () => {
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
     },
+    {
+      name: "Stuyvesant Website",
+      hours: "https://stuysu.org",
+      bgColor: "bg-purple-50",
+      borderColor: "border-purple-200",
+    },
   ];
 
   return (
@@ -49,7 +55,7 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
-              Contact
+              Contact Information
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto"></p>
           </div>

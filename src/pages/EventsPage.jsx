@@ -5,18 +5,7 @@ import Footer from "../components/Footer";
 const EventsPage = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
-  const upcomingEvents = [
-    {
-      title: "Study Session",
-      date: "2025-10-25",
-      description: "Example",
-    },
-    {
-      title: "Meeting",
-      date: "2025-10-01",
-      description: "Example",
-    },
-  ];
+  const upcomingEvents = [{}, {}];
 
   const pastEvents = [{}, {}];
 

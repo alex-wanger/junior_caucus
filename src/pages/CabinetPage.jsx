@@ -6,7 +6,7 @@ const CabinetPage = () => {
   const cabinetMembers = [
     {
       name: "Mufei Yu",
-      position: "President",
+      position: "Co-President",
       image: "/mufei.png",
     },
     {
@@ -22,7 +22,7 @@ const CabinetPage = () => {
     {
       name: "Adrien Devery-Michaelson",
       position: "Chief of Staff",
-      image: "/images/cabinet/sam-thompson.jpg",
+      image: "/adrien.png",
     },
     {
       name: "Abbie Lian",
@@ -122,7 +122,7 @@ const CabinetPage = () => {
               Our Cabinet
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Meet the dedicated leaders working tirelessly to make junior year
+              Meet the dedicated leaders working hard to make junior year
               memorable and meaningful for everyone.
             </p>
           </div>

@@ -33,10 +33,7 @@ const JPromPage = ({ setCurrentPage }) => {
               </p>
 
               <div className="mt-8">
-                <button
-                  onClick={() => setCurrentPage("contact")}
-                  className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-                >
+                <button className="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                   Coming Soon
                 </button>
               </div>

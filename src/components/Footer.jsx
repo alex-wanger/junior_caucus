@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Twitter, Instagram } from "lucide-react";
+import { Github, Twitter, Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   const cabinetMembers = [
@@ -55,12 +55,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-gray-800 mb-3">
               Follow Us
             </h3>
-            <div className="flex space-x-6">
+            <div className="flex space-x-5">
               <a
                 href="https://www.instagram.com/stuyjuniorcaucus/"
-                className="text-gray-600 hover:text-pink-500 transition"
+                className="text-pink-600 hover:text-pink-900 transition"
               >
                 <Instagram className="w-12 h-12" />
+              </a>
+              <a
+                href="https://www.facebook.com/StuyJuniorCaucus"
+                className="text-blue-600 hover:text-blue-900 transition"
+              >
+                <Facebook className="w-12 h-12" />
               </a>
             </div>
           </div>

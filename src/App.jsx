@@ -1,5 +1,6 @@
 // App.jsx
 import React, { useState } from "react";
+import "./index.css"; // Import your CSS file for global styles
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import CabinetPage from "./pages/CabinetPage";
@@ -27,7 +28,7 @@ const App = () => {
       case "suggestion":
         return <SuggestionBoxPage />;
       case "resources":
-        return <ResourcesPage />;
+        return <ResourcesPage setCurrentPage={setCurrentPage} />;
       default:
         return <HomePage setCurrentPage={setCurrentPage} />;
     }
