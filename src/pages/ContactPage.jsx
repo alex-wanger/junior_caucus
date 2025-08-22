@@ -43,7 +43,7 @@ const ContactPage = () => {
     },
     {
       name: "Stuyvesant Website",
-      hours: "https://stuysu.org",
+      hours: "https://stuy.enschool.org/",
       bgColor: "bg-purple-50",
       borderColor: "border-purple-200",
     },
