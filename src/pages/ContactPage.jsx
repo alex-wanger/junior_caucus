@@ -1,13 +1,19 @@
 import React from "react";
-import TransitBackground from "../components/TransitBackground";
-import { Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, Facebook } from "lucide-react";
 import Footer from "../components/Footer";
+
+// Mock components for demonstration
+const TransitBackground = ({ children }) => (
+  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+    {children}
+  </div>
+);
 
 const InstagramIcon = () => (
   <img
     src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
     alt="Instagram"
-    className="w-10 h-10"
+    className="w-6 h-6 filter brightness-0 invert"
   />
 );
 
@@ -79,22 +85,31 @@ const ContactPage = () => {
                     <p className="text-gray-700">{info.email}</p>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-8">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">
-                  Follow Us
-                </h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.instagram.com/stuyjuniorcaucus/"
-                    className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl p-3"
-                    aria-label="Follow us on Instagram"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <InstagramIcon />
-                  </a>
+                <div className="mt-8">
+                  <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                    <Facebook className="w-6 h-6 text-purple-500 mr-3" />
+                    Find Us
+                  </h2>
+                  <div className="flex space-x-4">
+                    <a
+                      href="https://www.instagram.com/stuyjuniorcaucus/"
+                      className="bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-full hover:from-pink-600 hover:to-purple-600 transition-all duration-300 shadow-lg hover:shadow-xl p-3"
+                      aria-label="Follow us on Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <InstagramIcon />
+                    </a>
+                    <a
+                      href="https://www.facebook.com/StuyJuniorCaucus"
+                      className="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl p-3"
+                      aria-label="Follow us on Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Facebook className="w-6 h-6" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

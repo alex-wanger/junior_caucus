@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
+import TransitBackground from "../components/TransitBackground";
 
 const EventsPage = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
+  // Sample data for demonstration
   const upcomingEvents = [{}, {}];
 
   const pastEvents = [{}, {}];
@@ -50,6 +51,7 @@ const EventsPage = () => {
   ];
 
   const dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const dayNamesShort = ["S", "M", "T", "W", "T", "F", "S"];
 
   const renderCalendar = () => {
     const daysInMonth = getDaysInMonth(currentDate);
@@ -58,7 +60,7 @@ const EventsPage = () => {
 
     // Empty cells for days before the first day of the month
     for (let i = 0; i < firstDay; i++) {
-      days.push(<div key={`empty-${i}`} className="p-2"></div>);
+      days.push(<div key={`empty-${i}`} className="p-1 sm:p-2"></div>);
     }
 
     // Days of the month
@@ -73,28 +75,33 @@ const EventsPage = () => {
       days.push(
         <div
           key={day}
-          className={`p-2 min-h-[60px] border border-gray-100 relative group cursor-pointer hover:bg-pink-50 transition-colors ${
+          className={`p-1 sm:p-2 min-h-[40px] sm:min-h-[60px] border border-gray-100 relative group cursor-pointer hover:bg-pink-50 active:bg-pink-100 transition-colors ${
             isToday ? "bg-pink-100 border-pink-300" : "bg-white/50"
           }`}
         >
           <div
-            className={`text-sm font-medium mb-1 ${
+            className={`text-xs sm:text-sm font-medium mb-1 ${
               isToday ? "text-pink-600" : "text-gray-700"
             }`}
           >
             {day}
           </div>
           {hasEvents && (
-            <div className="space-y-1">
-              {events.map((event, index) => (
+            <div className="space-y-0.5 sm:space-y-1">
+              {events.slice(0, 2).map((event, index) => (
                 <div
                   key={index}
-                  className="text-xs bg-purple-100 text-purple-700 px-1 py-0.5 rounded truncate group-hover:bg-purple-200 transition-colors"
+                  className="text-[10px] sm:text-xs bg-purple-100 text-purple-700 px-0.5 sm:px-1 py-0.5 rounded truncate group-hover:bg-purple-200 transition-colors"
                   title={`${event.title} - ${event.description}`}
                 >
                   {event.title}
                 </div>
               ))}
+              {events.length > 2 && (
+                <div className="text-[10px] sm:text-xs text-purple-600 font-medium">
+                  +{events.length - 2} more
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -106,96 +113,118 @@ const EventsPage = () => {
 
   return (
     <TransitBackground>
-      <div className="py-12">
+      <div className="py-6 sm:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
               Events
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto px-4">
               Stay connected with all Junior Caucus activities and important
               dates.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-l-4 border-pink-500 hover:shadow-xl transition-shadow duration-300">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-pink-500 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800">
                     Upcoming Events
                   </h3>
-                  <p className="text-gray-600">What's coming next</p>
+                  <p className="text-sm sm:text-base text-gray-600">
+                    What's coming next
+                  </p>
                 </div>
               </div>
-              <div className="space-y-4">
-                {upcomingEvents.map((event, index) => (
-                  <div
-                    key={index}
-                    className="bg-white/80 backdrop-blur-sm rounded-lg p-4 border border-pink-200"
-                  >
-                    <h4 className="font-semibold text-gray-800">
-                      {event.title}
-                    </h4>
-                    <p className="text-gray-600 text-sm">{event.date}</p>
-                    <p className="text-gray-700 text-sm mt-2">
-                      {event.description}
-                    </p>
-                  </div>
-                ))}
+              <div className="space-y-3 sm:space-y-4">
+                {upcomingEvents.length > 0 ? (
+                  upcomingEvents.map((event, index) => (
+                    <div
+                      key={index}
+                      className="bg-white/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-pink-200"
+                    >
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
+                        {event.title}
+                      </h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">
+                        {event.date}
+                      </p>
+                      <p className="text-gray-700 text-xs sm:text-sm mt-2">
+                        {event.description}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-gray-500 text-sm">
+                    No upcoming events scheduled.
+                  </p>
+                )}
               </div>
             </div>
 
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-l-4 border-purple-500 hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 border-l-4 border-purple-500 hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-4">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-800">
                     Past Events
                   </h3>
-                  <p className="text-gray-600">Recent activities</p>
+                  <p className="text-sm sm:text-base text-gray-600">
+                    Recent activities
+                  </p>
                 </div>
               </div>
-              <div className="space-y-4">
-                {pastEvents.map((event, index) => (
-                  <div
-                    key={index}
-                    className="bg-white/70 backdrop-blur-sm rounded-lg p-4 border border-gray-200"
-                  >
-                    <h4 className="font-semibold text-gray-800">
-                      {event.title}
-                    </h4>
-                    <p className="text-gray-600 text-sm">{event.date}</p>
-                    <p className="text-gray-700 text-sm mt-2">
-                      {event.description}
-                    </p>
-                  </div>
-                ))}
+              <div className="space-y-3 sm:space-y-4">
+                {pastEvents.length > 0 ? (
+                  pastEvents.map((event, index) => (
+                    <div
+                      key={index}
+                      className="bg-white/70 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-gray-200"
+                    >
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
+                        {event.title}
+                      </h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">
+                        {event.date}
+                      </p>
+                      <p className="text-gray-700 text-xs sm:text-sm mt-2">
+                        {event.description}
+                      </p>
+                    </div>
+                  ))
+                ) : (
+                  <p className="text-gray-500 text-sm">
+                    No past events to display.
+                  </p>
+                )}
               </div>
             </div>
           </div>
 
           {/* Interactive Calendar */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-pink-100">
-            <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold text-gray-800">
+          <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-4 sm:p-6 lg:p-8 border border-pink-100">
+            <div className="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-800 text-center sm:text-left">
                 Event Calendar
               </h2>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-2 sm:space-x-4">
                 <button
                   onClick={() => navigateMonth(-1)}
-                  className="p-2 rounded-lg bg-pink-100 hover:bg-pink-200 text-pink-600 transition-colors"
+                  className="p-2 sm:p-3 text-sm sm:text-base rounded-lg bg-pink-100 hover:bg-pink-200 active:bg-pink-300 text-pink-600 transition-colors touch-manipulation"
                 >
-                  ← Previous
+                  <span className="hidden sm:inline">← Previous</span>
+                  <span className="sm:hidden">←</span>
                 </button>
-                <h3 className="text-lg font-semibold text-gray-700 min-w-[180px] text-center">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-700 min-w-[140px] sm:min-w-[180px] text-center">
                   {monthNames[currentDate.getMonth()]}{" "}
                   {currentDate.getFullYear()}
                 </h3>
                 <button
                   onClick={() => navigateMonth(1)}
-                  className="p-2 rounded-lg bg-pink-100 hover:bg-pink-200 text-pink-600 transition-colors"
+                  className="p-2 sm:p-3 text-sm sm:text-base rounded-lg bg-pink-100 hover:bg-pink-200 active:bg-pink-300 text-pink-600 transition-colors touch-manipulation"
                 >
-                  Next →
+                  <span className="hidden sm:inline">Next →</span>
+                  <span className="sm:hidden">→</span>
                 </button>
               </div>
             </div>
@@ -203,29 +232,47 @@ const EventsPage = () => {
             <div className="bg-gradient-to-r from-pink-50/80 to-purple-50/80 backdrop-blur-sm rounded-lg border border-pink-200 overflow-hidden">
               {/* Calendar Header */}
               <div className="grid grid-cols-7 bg-gradient-to-r from-pink-100 to-purple-100">
-                {dayNames.map((day) => (
-                  <div
-                    key={day}
-                    className="p-3 text-center font-semibold text-gray-700 border-r border-pink-200 last:border-r-0"
-                  >
-                    {day}
-                  </div>
-                ))}
+                {/* Desktop day names */}
+                <div className="hidden sm:contents">
+                  {dayNames.map((day) => (
+                    <div
+                      key={day}
+                      className="p-2 sm:p-3 text-center font-semibold text-gray-700 border-r border-pink-200 last:border-r-0 text-sm"
+                    >
+                      {day}
+                    </div>
+                  ))}
+                </div>
+                {/* Mobile short day names */}
+                <div className="sm:hidden contents">
+                  {dayNamesShort.map((day, index) => (
+                    <div
+                      key={day}
+                      className="p-2 text-center font-semibold text-gray-700 border-r border-pink-200 last:border-r-0 text-xs"
+                    >
+                      {day}
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* Calendar Grid */}
               <div className="grid grid-cols-7">{renderCalendar()}</div>
             </div>
 
-            <div className="mt-6 text-center">
-              <p className="text-gray-600 mb-2">
-                <span className="inline-block w-3 h-3 bg-pink-100 border border-pink-300 rounded mr-2"></span>
-                Today
-                <span className="inline-block w-3 h-3 bg-purple-100 rounded ml-4 mr-2"></span>
-                Events
-              </p>
-              <p className="text-gray-500 text-sm">
-                Hover over event titles for more details
+            <div className="mt-4 sm:mt-6 text-center">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mb-2">
+                <div className="flex items-center">
+                  <span className="inline-block w-3 h-3 bg-pink-100 border border-pink-300 rounded mr-2"></span>
+                  <span className="text-sm text-gray-600">Today</span>
+                </div>
+                <div className="flex items-center">
+                  <span className="inline-block w-3 h-3 bg-purple-100 rounded mr-2"></span>
+                  <span className="text-sm text-gray-600">Events</span>
+                </div>
+              </div>
+              <p className="text-gray-500 text-xs sm:text-sm">
+                Tap on event titles for more details
               </p>
             </div>
           </div>

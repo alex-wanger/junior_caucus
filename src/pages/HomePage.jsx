@@ -106,9 +106,9 @@ const HomePage = ({ setCurrentPage }) => {
 
               <div
                 onClick={() => handleNavigation("cabinet")}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-blue-400 cursor-pointer group"
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-300 cursor-pointer group"
               >
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-purple-600 transition-colors">
                   Meet Our Team
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors mb-4">
@@ -116,7 +116,7 @@ const HomePage = ({ setCurrentPage }) => {
                   junior year amazing. Learn about our cabinet members, their
                   roles, and how they're here to support you.
                 </p>
-                <div className="mt-4 text-blue-500 font-semibold">
+                <div className="mt-4 text-purple-600 font-semibold">
                   Click to explore →
                 </div>
               </div>

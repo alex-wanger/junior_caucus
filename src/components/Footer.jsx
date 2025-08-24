@@ -19,8 +19,13 @@ const Footer = () => {
             </h2>
             <p className="text-gray-600 mt-2">
               Website built by{" "}
-              <a href="https://github.com/alex-wanger">Alex Wang</a> with design
-              help from Mufei Yu and Chloe Dech.
+              <a
+                href="https://github.com/alex-wanger"
+                className="text-red-200 hover:text-red-400"
+              >
+                Alex Wang
+              </a>{" "}
+              with design help from Mufei Yu and Chloe Dech.
             </p>
           </div>
 
@@ -35,11 +40,10 @@ const Footer = () => {
                   key={member.name}
                   className="font-bold text-gray-800 transition-colors duration-200 text-sm md:text-base cursor-pointer relative group"
                 >
-                  {member.name} –{" "}
+                  <span>{member.name}</span> –{" "}
                   <span className="font-medium text-gray-600">
                     {member.position}
                   </span>
-                  {}
                   {member.name === "Alex Wang" && (
                     <span className="top-1/4 -translate-y-1/2 ml-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-pink-500 font-bold whitespace-nowrap">
                       6...7

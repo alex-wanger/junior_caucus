@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 const SuggestionBoxPage = () => {
   return (
     <TransitBackground>
-      <div className="py-14">
+      <div className="py-11">
         <div className="max-w-4xl mx-auto px-4 sm:px-7 lg:px-8">
           <div className="text-center">
             <h1 className="text-5xl md:text-5xl font-bold leading-tight md:leading-[1.2] bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent mb-4">
@@ -24,7 +24,7 @@ const SuggestionBoxPage = () => {
             <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg p-4 border border-pink-200">
               <p className="text-gray-700 mb-4">
                 Please use the form below to submit your suggestions, ideas, or
-                feedback. We review every response carefully.
+                feedback.
               </p>
 
               {/* Embedded Google Form */}

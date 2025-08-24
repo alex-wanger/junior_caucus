@@ -2,6 +2,8 @@ import React from "react";
 import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
+// Mock components for demonstration
+
 const ResourcesPage = ({ setCurrentPage }) => {
   const handleNavigation = (page) => {
     setCurrentPage(page);
@@ -29,10 +31,14 @@ const ResourcesPage = ({ setCurrentPage }) => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
               <div
-                onClick={() => handleExternalLink("/study-guides")}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-blue-400 cursor-pointer group"
+                onClick={() =>
+                  handleExternalLink(
+                    "https://drive.google.com/drive/folders/1Qb0vlNd3P_jQJIUElcgIFQVbu2MvoGQt?usp=drive_link"
+                  )
+                }
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
               >
-                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-pink-600 transition-colors">
                   STUDY GUIDES
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
@@ -40,49 +46,60 @@ const ResourcesPage = ({ setCurrentPage }) => {
                   your subjects. From AP prep to final exam review, find the
                   resources you need to succeed.
                 </p>
-                <div className="mt-4 text-blue-400 group-hover:text-blue-600 transition-colors font-semibold">
+                <div className="mt-4 text-pink-500 group-hover:text-pink-600 transition-colors font-semibold">
                   Access guides →
                 </div>
               </div>
 
               <div
-                onClick={() => handleExternalLink("/course-guides")}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-green-400 cursor-pointer group"
+                onClick={() =>
+                  handleExternalLink(
+                    "https://drive.google.com/drive/folders/1ccL-icgaBwdv-fazf1dV6kOmaif-mWeE?usp=drive_link"
+                  )
+                }
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-400 cursor-pointer group"
               >
-                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-green-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-purple-600 transition-colors">
                   COURSE GUIDES
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
-                  Navigate your academic journey with detailed course
-                  information, requirements, and insider tips from upperclassmen
-                  who've been there.
+                  Navigate course selection with detailed course information,
+                  requirements, and advice from upperclassmen.
                 </p>
-                <div className="mt-4 text-green-400 group-hover:text-green-600 transition-colors font-semibold">
+                <div className="mt-4 text-purple-500 group-hover:text-purple-600 transition-colors font-semibold">
                   Explore courses →
                 </div>
               </div>
 
               <div
-                onClick={() => handleExternalLink("/newsletters")}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-400 cursor-pointer group"
+                onClick={() =>
+                  handleExternalLink(
+                    "https://drive.google.com/drive/folders/1ObMiOvc2aZ8ydlR6RdTW6kin-KG8qJtN?usp=drive_link"
+                  )
+                }
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-600 cursor-pointer group"
               >
-                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-purple-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-pink-700 transition-colors">
                   CAUCUS NEWSLETTERS
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
                   Stay updated with the latest Junior Caucus news,
                   announcements, and important dates.
                 </p>
-                <div className="mt-4 text-purple-400 group-hover:text-purple-600 transition-colors font-semibold">
+                <div className="mt-4 text-pink-500 group-hover:text-pink-700 transition-colors font-semibold">
                   Read newsletters →
                 </div>
               </div>
 
               <div
-                onClick={() => handleExternalLink("/sywtba-articles")}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-orange-400 cursor-pointer group"
+                onClick={() =>
+                  handleExternalLink(
+                    "https://drive.google.com/drive/folders/1ID-DsUJvOF4_fUEBH8pcuU8JIg0wAJ69?usp=drive_link"
+                  )
+                }
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-500 cursor-pointer group"
               >
-                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-orange-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-purple-600 transition-colors">
                   SYWTBA ARTICLES
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
@@ -90,7 +107,7 @@ const ResourcesPage = ({ setCurrentPage }) => {
                   you discover potential paths and make informed decisions about
                   your future.
                 </p>
-                <div className="mt-4 text-orange-400 group-hover:text-orange-600 transition-colors font-semibold">
+                <div className="mt-4 text-purple-500 group-hover:text-purple-600 transition-colors font-semibold">
                   Explore careers →
                 </div>
               </div>
@@ -100,7 +117,7 @@ const ResourcesPage = ({ setCurrentPage }) => {
           {/* Additional Resources Section */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid md:grid-cols-1 gap-8">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-indigo-400">
+              <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-600">
                 <h3 className="text-xl font-bold text-gray-800 mb-3">
                   Need Help?
                 </h3>
@@ -109,7 +126,7 @@ const ResourcesPage = ({ setCurrentPage }) => {
                 </p>
                 <button
                   onClick={() => handleNavigation("contact")}
-                  className="text-indigo-500 hover:text-indigo-600 font-semibold mt-4 transition-colors"
+                  className="text-pink-600 hover:text-pink-700 font-semibold mt-4 transition-colors"
                 >
                   Contact Us →
                 </button>
