@@ -1,13 +1,9 @@
 import React from "react";
 import { Mail, MapPin, Facebook } from "lucide-react";
+import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
 // Mock components for demonstration
-const TransitBackground = ({ children }) => (
-  <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
-    {children}
-  </div>
-);
 
 const InstagramIcon = () => (
   <img
