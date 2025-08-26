@@ -128,7 +128,7 @@ const ResourcesPage = ({ setCurrentPage }) => {
                   onClick={() => handleNavigation("contact")}
                   className="text-pink-600 hover:text-pink-700 font-semibold mt-4 transition-colors"
                 >
-                  Contact Us →
+                  Contact us →
                 </button>
               </div>
             </div>

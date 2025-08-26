@@ -6,6 +6,7 @@ const Footer = () => {
     { name: "Mufei Yu", position: "President" },
     { name: "Alex Wang", position: "IT Director" },
     { name: "Chloe Dech", position: "Graphics Director" },
+    { name: "Wenxin Zhang", position: "Graphics Director" },
   ];
 
   return (
@@ -74,6 +75,13 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="flex justify-end mt-6">
+          <p className="text-gray-500 text-sm">
+            © 2025 Stuyvesant Junior Caucus
+          </p>
         </div>
       </div>
     </footer>

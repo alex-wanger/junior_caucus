@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 const SuggestionBoxPage = () => {
   return (
-    <TransitBackground>
+    <TransitBackground backgroundIndex={4}>
       <div className="py-11">
         <div className="max-w-4xl mx-auto px-4 sm:px-7 lg:px-8">
           <div className="text-center">

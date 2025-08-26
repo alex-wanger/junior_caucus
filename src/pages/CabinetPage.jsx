@@ -3,86 +3,126 @@ import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
 const CabinetPage = () => {
-  const cabinetMembers = [
+  const departments = [
     {
-      name: "Mufei Yu",
-      position: "Co-President",
-      image: "/mufei.png",
+      name: "Leadership",
+      members: [
+        {
+          name: "Mufei Yu",
+          position: "Co-President",
+          image: "/mufei.jpeg",
+        },
+        {
+          name: "Mitali Jhaveri",
+          position: "Co-President",
+          image: "/mitali.png",
+        },
+        {
+          name: "Mace Elinson",
+          position: "Chief of Staff",
+          image: "/IMG_7655 - Mace Elinson.jpeg",
+        },
+        {
+          name: "Adrien Devery-Michaelson",
+          position: "Chief of Staff",
+          image: "/adrien.png",
+        },
+      ],
     },
     {
-      name: "Mitali Jhaveri",
-      position: "Co-President",
-      image: "/mitali.png",
+      name: "Graphics & IT",
+      members: [
+        {
+          name: "Chloe Dech",
+          position: "Graphics Director",
+          image: "/IMG_8123 - Chloe Dech.jpeg",
+        },
+        {
+          name: "Wenxin Zhang",
+          position: "Graphics Director",
+          image: "/IMG_0925 - Wen Xin Zhang.jpeg",
+        },
+        {
+          name: "Alex Wang",
+          position: "IT Director",
+          image: "wang.png",
+        },
+      ],
     },
     {
-      name: "Mace Elinson",
-      position: "Chief of Staff",
-      image: "/IMG_7655 - Mace Elinson.jpeg",
+      name: "Finance",
+      members: [
+        {
+          name: "Dylan Lonsk",
+          position: "Finance Director",
+          image: "/IMG_7841_HEIC - Dylan Lonsk.jpeg",
+        },
+        {
+          name: "Edwin Gelman",
+          position: "Finance Director",
+          image: "/Edwin Gelman profile picture - Edwin Gelman.jpg",
+        },
+        {
+          name: "Sophia Chen",
+          position: "Finance Director",
+          image: "/IMG_8939 - Sophia Chen.jpg",
+        },
+      ],
     },
     {
-      name: "Adrien Devery-Michaelson",
-      position: "Chief of Staff",
-      image: "/adrien.png",
+      name: "Internals",
+      members: [
+        {
+          name: "Abbie Lian",
+          position: "Internals Director",
+          image: "/IMG_3875 - Abbie Lian.jpeg",
+        },
+        {
+          name: "Marc Haddad",
+          position: "Internals Director",
+          image: "/IMG_2307 - Marc Haddad.jpeg",
+        },
+        {
+          name: "Afrin Alam",
+          position: "Internals Director",
+          image: "afrin.jpg",
+        },
+      ],
     },
     {
-      name: "Abbie Lian",
-      position: "Internals Director",
-      image: "/IMG_3875 - Abbie Lian.jpeg",
+      name: "Outreach",
+      members: [
+        {
+          name: "Amani Kaushal",
+          position: "Outreach Director",
+          image: "/IMG_9338 - Amani Kaushal.jpeg",
+        },
+        {
+          name: "Rachel Liu",
+          position: "Outreach Director",
+          image: "/IMG_1648 - Rachel Liu.jpeg",
+        },
+        {
+          name: "Ashley Mui",
+          position: "Outreach Director",
+          image: "/ashley.jpg",
+        },
+      ],
     },
     {
-      name: "Alex Wang",
-      position: "IT Director",
-      image: "wang.png",
-    },
-    {
-      name: "Amani Kaushal",
-      position: "Outreach Director",
-      image: "/IMG_9338 - Amani Kaushal.jpeg",
-    },
-    {
-      name: "Chloe Dech",
-      position: "Graphics Director",
-      image: "/IMG_8123 - Chloe Dech.jpeg",
-    },
-    {
-      name: "Dylan Lonsk",
-      position: "Finance Director",
-      image: "/IMG_7841_HEIC - Dylan Lonsk.jpeg",
-    },
-    {
-      name: "Edwin Gelman",
-      position: "Finance Director",
-      image: "/Edwin Gelman profile picture - Edwin Gelman.jpg",
-    },
-    {
-      name: "Luca Nedelkovic",
-      position: "Events Director",
-      image: "/IMG_6989 - Luca Nedelkovic.jpeg",
-    },
-    {
-      name: "Marc Haddad",
-      position: "Internals Director",
-      image: "/IMG_2307 - Marc Haddad.jpeg",
-    },
-    {
-      name: "Rachel Liu",
-      position: "Outreach Director",
-      image: "/IMG_1648 - Rachel Liu.jpeg",
-    },
-    {
-      name: "Saarah Jawfer",
-      position: "Events Director",
-      image: "/Saarah Jawfer.jpeg",
-    },
-    {
-      name: "Sophia Chen",
-      position: "Finance Director",
-      image: "/IMG_8939 - Sophia Chen.jpg",
-    },
-    {
-      name: "Wenxin Zhang",
-      position: "Graphics Director",
-      image: "/IMG_0925 - Wen Xin Zhang.jpeg",
+      name: "Events",
+      members: [
+        {
+          name: "Luca Nedelkovic",
+          position: "Events Director",
+          image: "/IMG_6989 - Luca Nedelkovic.jpeg",
+        },
+        {
+          name: "Saarah Jawfer",
+          position: "Events Director",
+          image: "/Saarah Jawfer.jpeg",
+        },
+      ],
     },
   ];
 
@@ -114,7 +154,7 @@ const CabinetPage = () => {
   };
 
   return (
-    <TransitBackground>
+    <TransitBackground backgroundIndex={2}>
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -127,20 +167,32 @@ const CabinetPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {cabinetMembers.map((member) => (
+          <div className="space-y-12">
+            {departments.map((department) => (
               <div
-                key={member.name}
-                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border border-pink-100"
+                key={department.name}
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-pink-100"
               >
-                <div className="text-center">
-                  <Avatar name={member.name} image={member.image} />
-                  <h3 className="font-bold text-xl text-gray-800 mb-1">
-                    {member.name}
-                  </h3>
-                  <p className="text-pink-600 font-semibold mb-2 text-sm">
-                    {member.position}
-                  </p>
+                <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                  {department.name}
+                </h2>
+                <div className="flex flex-wrap justify-center gap-6">
+                  {department.members.map((member) => (
+                    <div
+                      key={member.name}
+                      className="bg-white/70 backdrop-blur-sm rounded-xl shadow-md p-6 hover:shadow-lg hover:scale-105 transition-all duration-300 border border-pink-50 w-64 flex-shrink-0"
+                    >
+                      <div className="text-center">
+                        <Avatar name={member.name} image={member.image} />
+                        <h3 className="font-bold text-lg text-gray-800 mb-1">
+                          {member.name}
+                        </h3>
+                        <p className="text-pink-600 font-semibold text-sm">
+                          {member.position}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

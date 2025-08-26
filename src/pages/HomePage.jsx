@@ -8,14 +8,14 @@ const HomePage = ({ setCurrentPage }) => {
   };
 
   return (
-    <TransitBackground>
+    <TransitBackground backgroundIndex={0}>
       <div className="min-h-screen relative">
         {}
         <div className="relative">
           <img
-            src="/midtown.jpg"
+            src="/midtown.jpeg"
             alt="Junior Caucus Team Photo"
-            className="w-full h-96 object-cover"
+            className="w-full h-160 object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <div className="text-center text-white px-4">
@@ -91,7 +91,7 @@ const HomePage = ({ setCurrentPage }) => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-500">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Mission Statement
+                  Mission Statement (2025-26)
                 </h3>
                 <p className="text-gray-600">
                   The Junior Caucus aims to serve as a proactive and dedicated

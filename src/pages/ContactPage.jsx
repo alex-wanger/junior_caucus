@@ -3,8 +3,6 @@ import { Mail, MapPin, Facebook } from "lucide-react";
 import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
-// Mock components for demonstration
-
 const InstagramIcon = () => (
   <img
     src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
@@ -52,7 +50,7 @@ const ContactPage = () => {
   ];
 
   return (
-    <TransitBackground>
+    <TransitBackground backgroundIndex={4}>
       <div className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -66,7 +64,7 @@ const ContactPage = () => {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-pink-100">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                 <Mail className="w-6 h-6 text-pink-500 mr-3" />
-                Contact Us
+                Contact us
               </h2>
 
               <div className="space-y-6">
@@ -84,7 +82,7 @@ const ContactPage = () => {
                 <div className="mt-8">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                     <Facebook className="w-6 h-6 text-purple-500 mr-3" />
-                    Find Us
+                    Follow us
                   </h2>
                   <div className="flex space-x-4">
                     <a
@@ -113,7 +111,7 @@ const ContactPage = () => {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-purple-100">
               <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
                 <MapPin className="w-6 h-6 text-purple-500 mr-3" />
-                Find Us
+                Find us
               </h2>
 
               <div className="space-y-6">
