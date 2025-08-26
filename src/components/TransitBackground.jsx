@@ -19,7 +19,6 @@ const TransitBackground = ({
 
   useEffect(() => {
     if (backgroundIndex !== null) {
-      // Use specific background if index is provided
       setCurrentBackground(backgroundIndex % backgrounds.length);
     }
   }, [backgroundIndex, backgrounds.length]);
