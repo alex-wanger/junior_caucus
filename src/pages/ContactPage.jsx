@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, MapPin, Facebook } from "lucide-react";
+import { Mail, MapPin, Users, Facebook } from "lucide-react";
 import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
@@ -81,7 +81,7 @@ const ContactPage = () => {
                 ))}
                 <div className="mt-8">
                   <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                    <Facebook className="w-6 h-6 text-purple-500 mr-3" />
+                    <Users className="w-6 h-6 text-purple-500 mr-3" />
                     Follow us
                   </h2>
                   <div className="flex space-x-4">

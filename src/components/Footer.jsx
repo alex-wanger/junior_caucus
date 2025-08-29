@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Twitter, Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
   const cabinetMembers = [
@@ -26,7 +26,7 @@ const Footer = () => {
               >
                 Alex Wang
               </a>{" "}
-              with design help from Mufei Yu and Chloe Dech.
+              with design help from Mufei Yu, Chloe Dech, and Wenxin Zhang.
             </p>
           </div>
 

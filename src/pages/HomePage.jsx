@@ -13,8 +13,8 @@ const HomePage = ({ setCurrentPage }) => {
         {}
         <div className="relative">
           <img
-            src="/midtown.jpeg"
-            alt="Junior Caucus Team Photo"
+            src="/stuy_background.jpg"
+            alt="bg"
             className="w-full h-160 object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
@@ -23,7 +23,8 @@ const HomePage = ({ setCurrentPage }) => {
                 Welcome to Stuyvesant's Junior Caucus!
               </h1>
               <p className="text-xl md:text-2xl drop-shadow-md">
-                New York runs on the subway, but your junior year runs on us!
+                New York City runs on the subway, but your junior year runs on
+                us.
               </p>
             </div>
           </div>
