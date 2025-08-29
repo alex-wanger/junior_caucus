@@ -10,12 +10,12 @@ const HomePage = ({ setCurrentPage }) => {
   return (
     <TransitBackground backgroundIndex={0}>
       <div className="min-h-screen relative">
-        {}
-        <div className="relative">
+        {/* Hero Section */}
+        <div className="relative h-screen">
           <img
             src="/stuy_background.jpg"
             alt="bg"
-            className="w-full h-160 object-cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <div className="text-center text-white px-4">
