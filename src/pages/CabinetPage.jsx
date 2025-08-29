@@ -45,7 +45,7 @@ const CabinetPage = () => {
         {
           name: "Alex Wang",
           position: "IT Director",
-          image: "wang.png",
+          image: "wang.jpeg",
         },
       ],
     },
