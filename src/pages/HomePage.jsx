@@ -1,21 +1,24 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
-const HomePage = ({ setCurrentPage }) => {
+const HomePage = () => {
+  const navigate = useNavigate();
+
   const handleNavigation = (page) => {
-    setCurrentPage(page);
+    navigate(`/${page}`);
   };
 
   return (
     <TransitBackground backgroundIndex={0}>
       <div className="min-h-screen relative">
         {/* Hero Section */}
-        <div className="relative h-screen">
+        <div className="relative h-screen min-h-screen">
           <img
             src="/stuy_background.jpg"
             alt="bg"
-            className="w-full h-full object-cover"
+            className="w-full h-full min-h-screen object-cover"
           />
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
             <div className="text-center text-white px-4">

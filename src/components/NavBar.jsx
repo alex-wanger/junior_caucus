@@ -6,7 +6,6 @@ import { Menu, X } from "lucide-react";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation(); // Hook to get current route
-
   const pages = [
     { path: "/cabinet", label: "Cabinet" },
     { path: "/jprom", label: "JProm" },
@@ -15,26 +14,23 @@ const NavBar = () => {
     { path: "/contact", label: "Contact" },
     { path: "/resources", label: "Resources" },
   ];
-
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo + Title */}
           <div className="flex-shrink-0 flex items-center">
-            <img
-              src="./../../SU.png"
-              alt="Stuy logo"
-              className="h-10 w-10 mr-3"
-            />
             <Link
               to="/"
-              className="text-2xl font-bold bg-pink-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity duration-200"
+              className="flex items-center hover:opacity-80 transition-opacity duration-200"
             >
-              Junior Caucus
+              <img
+                src="/juniorcaucus.png"
+                alt="Junior Caucus logo"
+                className="h-20 w-30 mr-3"
+              />
             </Link>
           </div>
-
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
@@ -53,7 +49,6 @@ const NavBar = () => {
               ))}
             </div>
           </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -69,7 +64,6 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
@@ -94,5 +88,4 @@ const NavBar = () => {
     </nav>
   );
 };
-
 export default NavBar;
