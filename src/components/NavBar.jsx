@@ -25,9 +25,9 @@ const NavBar = () => {
               className="flex items-center hover:opacity-80 transition-opacity duration-200"
             >
               <img
-                src="/juniorcaucus.png"
+                src="/homepage.png"
                 alt="Junior Caucus logo"
-                className="h-20 w-30 mr-3"
+                className="h-40 w-50 ml-2" // adds margin-left to create space
               />
             </Link>
           </div>
