@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import CabinetPage from "./pages/CabinetPage";
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/resources" element={<ResourcesPage />} />
           </Routes>
         </main>
+        <Analytics />
       </div>
     </BrowserRouter>
   );
