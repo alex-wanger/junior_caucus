@@ -98,17 +98,14 @@ const HomePage = () => {
                   Mission Statement (2025-2026)
                 </h3>
                 <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
-                  “The Junior Caucus aims to serve as a proactive and dedicated
+                  The Junior Caucus aims to serve as a proactive and dedicated
                   body for the junior class, promoting community, collaboration,
                   and student engagement. By offering resources, hosting events,
                   and advocating for students, the Junior Caucus strives to
                   create a supportive environment where students can succeed
                   academically, connect socially, and enjoy a meaningful and
-                  memorable junior year.”
+                  memorable junior year.
                 </p>
-                <div className="mt-4 text-pink-600 font-semibold">
-                  Click to explore →
-                </div>
               </div>
 
               <div
