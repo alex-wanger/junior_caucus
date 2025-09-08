@@ -83,9 +83,9 @@ const CabinetPage = () => {
           image: "/IMG_2307 - Marc Haddad.jpeg",
         },
         {
-          name: "Afrin Alam",
+          name: "Alina Dong",
           position: "Internals Director",
-          image: "afrin.jpg",
+          image: "alina.jpeg",
         },
       ],
     },

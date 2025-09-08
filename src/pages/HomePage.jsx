@@ -16,7 +16,7 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="relative h-screen min-h-screen">
           <img
-            src="/stuy_background.jpg"
+            src="/Stuy_building.jpg"
             alt="bg"
             className="w-full h-full min-h-screen object-cover"
           />
@@ -93,19 +93,20 @@ const HomePage = () => {
           {/* Mission Statement and Cabinet Section */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border-t-4 border-pink-500">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Mission Statement (2025-26)
+              <div
+                onClick={() => handleNavigation("about")}
+                className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-500 cursor-pointer group"
+              >
+                <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-pink-600 transition-colors">
+                  About Us (2025-2026)
                 </h3>
-                <p className="text-gray-600">
-                  The Junior Caucus aims to serve as a proactive and dedicated
-                  body for the junior class, promoting community, collaboration,
-                  and student engagement. By offering resources, hosting events,
-                  and advocating for students, the Junior Caucus strives to
-                  create a supportive environment where students can succeed
-                  academically, connect socially, and enjoy a meaningful and
-                  memorable junior year.
+                <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
+                  Learn more about the Stuyvesant Junior Caucus. Find out about
+                  what we do, who we are, and our mission.
                 </p>
+                <div className="mt-4 text-pink-600 font-semibold">
+                  Click to explore →
+                </div>
               </div>
 
               <div
