@@ -5,8 +5,14 @@ import TransitBackground from "../components/TransitBackground";
 const EventsPage = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
 
-  // Sample data for demonstration
-  const upcomingEvents = [{}, {}];
+  const upcomingEvents = [
+    {
+      title: "Cornell + Bing Tour",
+      date: "2025-10-18",
+      description: "Join us on our tour of Cornell and Binghamton.",
+    },
+    {},
+  ];
 
   const pastEvents = [{}, {}];
 
@@ -58,12 +64,10 @@ const EventsPage = () => {
     const firstDay = getFirstDayOfMonth(currentDate);
     const days = [];
 
-    // Empty cells for days before the first day of the month
     for (let i = 0; i < firstDay; i++) {
       days.push(<div key={`empty-${i}`} className="p-1 sm:p-2"></div>);
     }
 
-    // Days of the month
     for (let day = 1; day <= daysInMonth; day++) {
       const events = getEventsForDate(day);
       const hasEvents = events.length > 0;
