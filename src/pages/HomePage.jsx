@@ -10,6 +10,10 @@ const HomePage = () => {
     navigate(`/${page}`);
   };
 
+  const handleExternalLink = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <TransitBackground backgroundIndex={0}>
       <div className="min-h-screen relative">
@@ -36,6 +40,20 @@ const HomePage = () => {
         {/* Content */}
         <div className="relative z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div
+              onClick={() =>
+                handleExternalLink("https://forms.gle/72ZUjwXR1sPnC36X7")
+              }
+              className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
+            >
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                Apply to Junior Caucus by 9/14!
+              </h2>
+              <p className="text-gray-600">
+                Apply to be a member of the Junior Caucus by midnight on 9/14!
+                We look forward to reading your applications!
+              </p>
+            </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div
                 onClick={() => handleNavigation("events")}

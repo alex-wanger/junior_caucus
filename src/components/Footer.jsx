@@ -45,11 +45,6 @@ const Footer = () => {
                   <span className="font-medium text-gray-600">
                     {member.position}
                   </span>
-                  {member.name === "Alex Wang" && (
-                    <span className="top-1/4 -translate-y-1/2 ml-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-pink-500 font-bold whitespace-nowrap">
-                      6...7
-                    </span>
-                  )}
                 </li>
               ))}
             </ul>

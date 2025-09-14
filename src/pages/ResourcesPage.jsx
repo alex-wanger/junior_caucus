@@ -1,12 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import TransitBackground from "../components/TransitBackground";
 import Footer from "../components/Footer";
 
 // Mock components for demonstration
 
-const ResourcesPage = ({ setCurrentPage }) => {
+const ResourcesPage = () => {
+  const navigate = useNavigate();
+
   const handleNavigation = (page) => {
-    setCurrentPage(page);
+    navigate(`/${page}`);
   };
 
   const handleExternalLink = (url) => {
