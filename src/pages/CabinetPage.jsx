@@ -18,11 +18,6 @@ const CabinetPage = () => {
           image: "/mitali.png",
         },
         {
-          name: "Mace Elinson",
-          position: "Chief of Staff",
-          image: "/IMG_7655 - Mace Elinson.jpeg",
-        },
-        {
           name: "Adrien Devery-Michaelson",
           position: "Chief of Staff",
           image: "/adrien.png",
