@@ -42,16 +42,18 @@ const HomePage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div
               onClick={() =>
-                handleExternalLink("https://forms.gle/72ZUjwXR1sPnC36X7")
+                handleExternalLink(
+                  "https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y%2Fviewform%3Fedit_requested%3Dtrue%26fbclid%3DPAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q&e=AT1XBorcRq-L7YrNlh1zHvW5UjmbwdFVMiMkVWd70JZunagKMSh8S_w00cMD4wdOwdkS918inI9M09G6RcdRi-iR17Kq6xZ59KOHC-18yvpTC2dLVv8kRZkhBg"
+                )
               }
               className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                Apply to Junior Caucus by 9/14!
+                Cornell + Binghamton tours - Apply Now!
               </h2>
               <p className="text-gray-600">
-                Apply to be a member of the Junior Caucus by midnight on 9/14!
-                We look forward to reading your applications!
+                Sign up by September 26 to join the Senior and Junior Caucuses
+                on a tour of Cornell and Binghamton!
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
