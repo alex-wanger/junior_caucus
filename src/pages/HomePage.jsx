@@ -49,11 +49,27 @@ const HomePage = () => {
               className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
             >
               <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                Cornell + Binghamton tours - Apply Now!
+                Cornell + Binghamton Tours!
               </h2>
               <p className="text-gray-600">
                 Sign up by September 26 to join the Senior and Junior Caucuses
                 on a tour of Cornell and Binghamton!
+              </p>
+            </div>
+            <div
+              onClick={() =>
+                handleExternalLink(
+                  "https://drive.google.com/drive/folders/1ObMiOvc2aZ8ydlR6RdTW6kin-KG8qJtN"
+                )
+              }
+              className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
+            >
+              <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                Recent Newsletter!
+              </h2>
+              <p className="text-gray-600">
+                Check out our recent back to school newsletter for more
+                information and updates!
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
