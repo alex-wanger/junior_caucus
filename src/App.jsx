@@ -10,7 +10,6 @@ import ContactPage from "./pages/ContactPage";
 import ResourcesPage from "./pages/ResourcesPage";
 import SuggestionBoxPage from "./pages/SuggestionBoxPage";
 import ResetTop from "./components/ResetTop";
-import Tours from "./pages/Tours";
 
 const App = () => {
   return (
@@ -27,7 +26,6 @@ const App = () => {
             <Route path="/suggestions" element={<SuggestionBoxPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/resources" element={<ResourcesPage />} />
-            <Route path="/tours" element ={<Tours/>} />
           </Routes>
         </main>
         <Analytics />
