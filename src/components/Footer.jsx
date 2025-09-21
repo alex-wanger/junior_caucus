@@ -39,7 +39,7 @@ const Footer = () => {
               {cabinetMembers.map((member) => (
                 <li
                   key={member.name}
-                  className="font-bold text-gray-800 transition-colors duration-200 text-sm md:text-base cursor-pointer relative group"
+                  className="font-bold text-gray-800 transition-colors duration-200 text-sm md:text-base relative group"
                 >
                   <span>{member.name}</span> –{" "}
                   <span className="font-medium text-gray-600">
