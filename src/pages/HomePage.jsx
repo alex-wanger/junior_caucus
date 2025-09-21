@@ -43,7 +43,7 @@ const HomePage = () => {
             <div
               onClick={() =>
                 handleExternalLink(
-                  "https://l.instagram.com/?u=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y%2Fviewform%3Fedit_requested%3Dtrue%26fbclid%3DPAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q&e=AT1XBorcRq-L7YrNlh1zHvW5UjmbwdFVMiMkVWd70JZunagKMSh8S_w00cMD4wdOwdkS918inI9M09G6RcdRi-iR17Kq6xZ59KOHC-18yvpTC2dLVv8kRZkhBg"
+                  "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q"
                 )
               }
               className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
