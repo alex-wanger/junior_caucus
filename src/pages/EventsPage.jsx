@@ -7,11 +7,25 @@ const EventsPage = () => {
 
   const upcomingEvents = [
     {
+      title: "Speaker Event",
+      date: "2025-09-28",
+      description:
+        "For the Sunday Workshop we will have Software Engineers from Google, Intuit, and Amazon. From the Business end we will have people from American Express and Goldman Zachs. We are still waiting to confirm some more panelists but we will have alumni from Columbia Engineering, Yale, Georgia Tech Cornell Engineering, Harvard Law and University of Chicago. More schools to be added. There will be a special focus on college and job interview prep",
+      link: "https://docs.google.com/spreadsheets/d/1NrWs5V7ShNCsOqIRi7vlStpWKlh3_1i7c7zhBYPEZhE/edit?gid=0#gid=0",
+    },
+    {
+      title: "YTT Workshop",
+      date: "2025-10-01",
+      description:
+        "Juniors! Are you stressed about junior year? Looking for a professional when it comes to advice regarding college applications? Or are you just a big fan of our goat JC from Y Tu Tambien? Look no further because the Junior Caucus is hosting our first YTT Workshop of the school year on October 1st @ 8:00 PM!",
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdbFz9No_iaJU9RUq-djeEDzrK0ZEOr37iBynzrxhB7mDUe7A/viewform?usp=header",
+    },
+    {
       title: "Cornell + Bing Tour",
       date: "2025-10-18",
       description: "Join us on our tour of Cornell and Binghamton.",
+      link: "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAaeOFuiISibgxWbJmI3fse1meXco8NEQZZWXJDokrn9mnRJpelRUimKOcJkKdg_aem_O3nBHsWUegFq8lTUwpL0LA",
     },
-    {},
   ];
 
   const pastEvents = [{}, {}];
@@ -39,6 +53,16 @@ const EventsPage = () => {
       newDate.setMonth(prev.getMonth() + direction);
       return newDate;
     });
+  };
+
+  const handleEventClick = (event) => {
+    if (event.link) {
+      if (event.link.startsWith("http") || event.link.startsWith("https")) {
+        window.open(event.link, "_blank");
+      } else {
+        window.location.href = event.link;
+      }
+    }
   };
 
   const monthNames = [
@@ -95,8 +119,15 @@ const EventsPage = () => {
               {events.slice(0, 2).map((event, index) => (
                 <div
                   key={index}
-                  className="text-[10px] sm:text-xs bg-purple-100 text-purple-700 px-0.5 sm:px-1 py-0.5 rounded truncate group-hover:bg-purple-200 transition-colors"
-                  title={`${event.title} - ${event.description}`}
+                  onClick={() => handleEventClick(event)}
+                  className={`text-[10px] sm:text-xs bg-purple-100 text-purple-700 px-0.5 sm:px-1 py-0.5 rounded truncate group-hover:bg-purple-200 transition-colors ${
+                    event.link
+                      ? "cursor-pointer hover:bg-purple-300 hover:text-purple-800"
+                      : ""
+                  }`}
+                  title={`${event.title} - ${event.description}${
+                    event.link ? " (Click to open)" : ""
+                  }`}
                 >
                   {event.title}
                 </div>
@@ -146,10 +177,30 @@ const EventsPage = () => {
                   upcomingEvents.map((event, index) => (
                     <div
                       key={index}
-                      className="bg-white/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-pink-200"
+                      onClick={() => handleEventClick(event)}
+                      className={`bg-white/80 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-pink-200 transition-all duration-200 ${
+                        event.link
+                          ? "cursor-pointer hover:bg-white hover:shadow-md hover:border-pink-300 hover:scale-[1.02]"
+                          : ""
+                      }`}
                     >
                       <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
                         {event.title}
+                        {event.link && (
+                          <svg
+                            className="inline-block ml-1 w-3 h-3 text-pink-500"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                        )}
                       </h4>
                       <p className="text-gray-600 text-xs sm:text-sm">
                         {event.date}
@@ -183,10 +234,30 @@ const EventsPage = () => {
                   pastEvents.map((event, index) => (
                     <div
                       key={index}
-                      className="bg-white/70 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-gray-200"
+                      onClick={() => handleEventClick(event)}
+                      className={`bg-white/70 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-gray-200 transition-all duration-200 ${
+                        event.link
+                          ? "cursor-pointer hover:bg-white/80 hover:shadow-md hover:border-gray-300"
+                          : ""
+                      }`}
                     >
                       <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
                         {event.title}
+                        {event.link && (
+                          <svg
+                            className="inline-block ml-1 w-3 h-3 text-purple-500"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                        )}
                       </h4>
                       <p className="text-gray-600 text-xs sm:text-sm">
                         {event.date}
@@ -276,7 +347,7 @@ const EventsPage = () => {
                 </div>
               </div>
               <p className="text-gray-500 text-xs sm:text-sm">
-                Tap on event titles for more details
+                Click on event titles to view more details
               </p>
             </div>
           </div>
