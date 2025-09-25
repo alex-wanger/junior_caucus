@@ -76,7 +76,7 @@ const HomePage = () => {
             <div
               onClick={() =>
                 handleExternalLink(
-                  "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q"
+                  "https://docs.google.com/spreadsheets/d/1NrWs5V7ShNCsOqIRi7vlStpWKlh3_1i7c7zhBYPEZhE/edit?gid=0#gid=0"
                 )
               }
               className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-700 cursor-pointer group"
@@ -96,7 +96,7 @@ const HomePage = () => {
             <div
               onClick={() =>
                 handleExternalLink(
-                  "https://docs.google.com/spreadsheets/d/1NrWs5V7ShNCsOqIRi7vlStpWKlh3_1i7c7zhBYPEZhE/edit?gid=0#gid=0"
+                  "https://docs.google.com/forms/d/e/1FAIpQLSdbFz9No_iaJU9RUq-djeEDzrK0ZEOr37iBynzrxhB7mDUe7A/viewform"
                 )
               }
               className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-400 cursor-pointer group"
