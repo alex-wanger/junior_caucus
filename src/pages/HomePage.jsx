@@ -85,19 +85,18 @@ const HomePage = () => {
                 Speaker Event
               </h2>
               <p className="text-gray-600">
-                We will be a guest speaker event online
-                featuring Stuyvesant graduates who went on to have successful
-                college experiences and careers, including employees at FAANG
-                and graduates of numerous Ivy League institutions. This event is
-                a great opportunity to hear direct advice from people who were
-                once in your shoes.
+                We will be a guest speaker event online featuring Stuyvesant
+                graduates who went on to have successful college experiences and
+                careers, including employees at FAANG and graduates of numerous
+                Ivy League institutions. This event is a great opportunity to
+                hear direct advice from people who were once in your shoes.
               </p>
             </div>
 
             <div
               onClick={() =>
                 handleExternalLink(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSdbFz9No_iaJU9RUq-djeEDzrK0ZEOr37iBynzrxhB7mDUe7A/viewform"
+                  "https://docs.google.com/spreadsheets/d/1NrWs5V7ShNCsOqIRi7vlStpWKlh3_1i7c7zhBYPEZhE/edit?gid=0#gid=0"
                 )
               }
               className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-400 cursor-pointer group"
