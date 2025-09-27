@@ -13,6 +13,7 @@ const NavBar = () => {
     { path: "/suggestions", label: "Suggestions" },
     { path: "/contact", label: "Contact" },
     { path: "/resources", label: "Resources" },
+    { path: "/tours", label: "Tours" },
   ];
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
@@ -25,7 +26,7 @@ const NavBar = () => {
               className="flex items-center hover:opacity-80 transition-opacity duration-200"
             >
               <img
-                src="/homepage.png"
+                src="/homepage.webp"
                 alt="Junior Caucus logo"
                 className="h-40 w-50 ml-2" // adds margin-left to create space
               />

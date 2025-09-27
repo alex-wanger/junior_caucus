@@ -18,7 +18,7 @@ const JPromPage = ({ setCurrentPage }) => {
               </h2>
 
               <img
-                src="/disco.png"
+                src="/disco.webp"
                 alt="JProm"
                 className="w-64 h-64 mx-auto mb-6"
               />

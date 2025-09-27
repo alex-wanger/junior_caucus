@@ -85,11 +85,12 @@ const HomePage = () => {
                 Speaker Event
               </h2>
               <p className="text-gray-600">
-                We will be a guest speaker event online featuring Stuyvesant
-                graduates who went on to have successful college experiences and
-                careers, including employees at FAANG and graduates of numerous
-                Ivy League institutions. This event is a great opportunity to
-                hear direct advice from people who were once in your shoes.
+                We will be a guest speaker event online
+                featuring Stuyvesant graduates who went on to have successful
+                college experiences and careers, including employees at FAANG
+                and graduates of numerous Ivy League institutions. This event is
+                a great opportunity to hear direct advice from people who were
+                once in your shoes.
               </p>
             </div>
 

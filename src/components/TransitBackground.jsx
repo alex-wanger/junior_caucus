@@ -9,12 +9,12 @@ const TransitBackground = ({
 
   // Array of 6 different background images
   const backgrounds = [
-    "/backgrounds/background.png",
-    "/backgrounds/background2.png",
-    "/backgrounds/background3.png",
-    "/backgrounds/background4.png",
-    "/backgrounds/background5.png",
-    "/backgrounds/background6.png",
+    "/backgrounds/background.webp",
+    "/backgrounds/background2.webp",
+    "/backgrounds/background3.webp",
+    "/backgrounds/background4.webp",
+    "/backgrounds/background5.webp",
+    "/backgrounds/background6.webp",
   ];
 
   useEffect(() => {
