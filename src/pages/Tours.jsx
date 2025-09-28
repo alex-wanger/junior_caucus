@@ -14,67 +14,21 @@ const Tours = () => {
     window.open(url, "_blank");
   };
 
-  // Sample tour guide data - replace with actual data
-  const tourGuides = [
+  // Links and resources data
+  const resources = [
     {
-      name: "Alex Johnson",
-      major: "Computer Science",
-      year: "Junior",
-      bio: "Passionate about technology and campus life, Alex has been leading tours for 2 years and loves sharing Cornell's hidden gems.",
-      image: "https://via.placeholder.com/150x150/6366f1/ffffff?text=AJ",
-    },
-    {
-      name: "Sarah Chen",
-      major: "Business Administration",
-      year: "Junior",
-      bio: "With extensive knowledge of Cornell's academic programs and student organizations, Sarah brings energy and insight to every tour.",
-      image: "https://via.placeholder.com/150x150/ec4899/ffffff?text=SC",
-    },
-    {
-      name: "Marcus Williams",
-      major: "Engineering",
-      year: "Junior",
-      bio: "An experienced tour guide who knows Cornell inside and out, Marcus specializes in showing prospective students the best of campus life.",
-      image: "https://via.placeholder.com/150x150/8b5cf6/ffffff?text=MW",
-    },
-  ];
-
-  const itinerary = [
-    {
-      time: "9:00 AM",
-      activity: "Meet at Willard Straight Hall",
-      description: "Tour group assembly and introductions",
-    },
-    {
-      time: "9:15 AM",
-      activity: "Academic Quad Tour",
-      description: "Visit key academic buildings and learn about programs",
-    },
-    {
-      time: "10:00 AM",
-      activity: "Library & Study Spaces",
-      description: "Explore Cornell's world-class library system",
-    },
-    {
-      time: "10:45 AM",
-      activity: "Student Life Center",
-      description: "Discover dining, recreation, and social spaces",
-    },
-    {
-      time: "11:30 AM",
-      activity: "Residence Halls",
-      description: "Tour dormitories and housing options",
-    },
-    {
-      time: "12:15 PM",
-      activity: "Campus Scenic Views",
+      title: "TOUR SIGN-UP FORM",
       description:
-        "Visit Cornell's most beautiful spots and photo opportunities",
+        "Register for the Cornell & Binghamton University Tour on October 18, 2025. $54 per student, first 54 to pay get spots. Form closes September 29 @ 11:59 PM.",
+      link: "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true",
+      actionText: "Sign up now →",
     },
     {
-      time: "1:00 PM",
-      activity: "Q&A Session",
-      description: "Ask questions and get insider tips from current students",
+      title: "TOUR GUIDE BIOS",
+      description:
+        "Meet your tour guides and learn about their experiences at Cornell and Binghamton. Get to know the students who will be showing you around campus.",
+      link: "https://docs.google.com/document/d/1F_JjkdyqzNEKFnuZPukVYfYL0tkNn7BIpdg5hm7q0bE/edit?usp=drivesdk",
+      actionText: "Meet the guides →",
     },
   ];
 
@@ -88,18 +42,19 @@ const Tours = () => {
               Cornell x Bing Campus Tours
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-              Discover Cornell University through the eyes of current junior
-              students. Get an authentic, insider's perspective on campus life,
-              academics, and everything in between!
+              Join the Junior and Senior caucus as we tour Cornell and
+              Binghamton
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() =>
-                  handleExternalLink("https://forms.gle/signup-link")
+                  handleExternalLink(
+                    "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true"
+                  )
                 }
-                className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+                className="bg-purple-500 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
               >
                 Sign Up for Tour
               </button>
@@ -107,7 +62,7 @@ const Tours = () => {
                 onClick={() => handleNavigation("contact")}
                 className="border-2 border-pink-600 text-pink-600 px-8 py-3 rounded-lg font-semibold hover:bg-pink-600 hover:text-white transition-all duration-300"
               >
-                Have Questions?
+                Contact Page
               </button>
             </div>
           </div>
@@ -117,12 +72,12 @@ const Tours = () => {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-t-4 border-pink-400">
               <h3 className="text-xl font-bold text-gray-800 mb-3">📅 When</h3>
               <p className="text-gray-600">
-                Every June 7th  
+                <span className="font-semibold">October 18, 2025</span>
                 <br />
-                Duration: 4 hours
+                7:30 AM - 9:30 PM
                 <br />
                 <span className="text-sm text-gray-500">
-                  Dig 
+                  Arrive at Stuyvesant before 7:30 AM
                 </span>
               </p>
             </div>
@@ -130,202 +85,159 @@ const Tours = () => {
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-t-4 border-purple-400">
               <h3 className="text-xl font-bold text-gray-800 mb-3">💰 Cost</h3>
               <p className="text-gray-600">
-                <span className="text-2xl font-bold text-purple-600">$25</span>{" "}
-                per person
+                <span className="text-2xl font-bold text-purple-600">$54</span>{" "}
+                per student
                 <br />
                 <span className="text-sm text-gray-500">
-                  Includes refreshments and materials
+                  Bus fare only - food not included
                 </span>
                 <br />
-                <span className="text-sm font-semibold text-green-600">
-                  Free for Cornell students!
+                <span className="text-sm text-orange-600 font-semibold">
+                  Lunch ~$15 at Morrison Dining
                 </span>
               </p>
             </div>
 
             <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-t-4 border-pink-600">
               <h3 className="text-xl font-bold text-gray-800 mb-3">
-                👥 Group Size
+                👥 Capacity
               </h3>
               <p className="text-gray-600">
-                Maximum 15 people per tour
+                <span className="font-semibold">54 students maximum</span>
                 <br />
-                Small groups for personalized experience
+                First 54 to pay get spots
                 <br />
                 <span className="text-sm text-gray-500">
-                  Book early to secure your spot!
+                  Waitlist available after capacity
                 </span>
               </p>
             </div>
           </div>
 
-          {/* Itinerary Section */}
+          {/* Important Information Section */}
           <div className="mb-12">
-            <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-              Tour Itinerary
-            </h2>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8">
-              <div className="space-y-6">
-                {itinerary.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start space-x-4 pb-6 border-b border-gray-200 last:border-b-0"
-                  >
-                    <div className="flex-shrink-0 w-20 text-right">
-                      <span className="text-sm font-semibold text-purple-600 bg-purple-100 px-2 py-1 rounded">
-                        {item.time}
-                      </span>
-                    </div>
-                    <div className="flex-grow">
-                      <h4 className="font-bold text-gray-800 mb-1">
-                        {item.activity}
-                      </h4>
-                      <p className="text-gray-600 text-sm">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-400 p-6 rounded-lg mb-8">
+              <h3 className="text-lg font-bold text-red-800 mb-2">
+                ⚠️ Important Information
+              </h3>
+              <ul className="text-red-700 space-y-1 text-sm">
+                <li>
+                  • <strong>Form closes:</strong> Monday, September 29 @ 11:59
+                  PM or when sold out
+                </li>
+                <li>
+                  • <strong>Your spot is secured only after payment</strong>
+                </li>
+                <li>
+                  • <strong>Refund Policy:</strong> Only if you find someone to
+                  take your spot or someone from waitlist is available
+                </li>
+                <li>
+                  • <strong>No refund</strong> if you miss the tour or can't
+                  find a replacement
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-400 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-blue-800 mb-2">
+                📧 Questions?
+              </h3>
+              <p className="text-blue-700 text-sm">
+                Contact: vanna.lei@stuysu.org, amy.zhou@stuysu.org,
+                mufei.yu@stuysu.org, or mitali.jhaveri@stuysu.org
+              </p>
             </div>
           </div>
 
-          {/* Tour Guides Section */}
+          {/* Resources Grid */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-              Meet Your Tour Guides
+              Tour Information & Links
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {tourGuides.map((guide, index) => (
+            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+              {resources.map((resource, index) => (
                 <div
                   key={index}
-                  className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 text-center"
+                  onClick={() => handleExternalLink(resource.link)}
+                  className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
                 >
-                  <img
-                    src={guide.image}
-                    alt={guide.name}
-                    className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-pink-200"
-                  />
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
-                    {guide.name}
+                  <h3 className="text-xl font-bold text-gray-800 mb-4 group-hover:text-pink-600 transition-colors">
+                    {resource.title}
                   </h3>
-                  <p className="text-purple-600 font-semibold mb-1">
-                    {guide.major}
+                  <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
+                    {resource.description}
                   </p>
-                  <p className="text-gray-500 text-sm mb-3">{guide.year}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {guide.bio}
-                  </p>
+                  <div className="mt-4 text-pink-500 group-hover:text-pink-600 transition-colors font-semibold">
+                    {resource.actionText}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* What's Included Section */}
+          {/* Tour Itinerary & Details */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-              What's Included
+              Tour Details & Itinerary
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-t-4 border-pink-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  ✨ Tour Highlights
+                  🗓️ Daily Schedule
                 </h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Comprehensive campus walkthrough</li>
-                  <li>• Access to academic buildings</li>
-                  <li>• Residence hall visits</li>
-                  <li>• Dining hall experience</li>
-                  <li>• Photo opportunities at scenic spots</li>
-                  <li>• Insider tips and advice</li>
-                </ul>
+                <div className="space-y-3 text-gray-600">
+                  <div className="flex justify-between items-center border-b pb-2">
+                    <span className="font-medium">7:30 AM</span>
+                    <span>Departure from Stuyvesant</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b pb-2">
+                    <span className="font-medium">Morning</span>
+                    <span>Cornell University Tour</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b pb-2">
+                    <span className="font-medium">Lunch</span>
+                    <span>Morrison Dining @ Cornell</span>
+                  </div>
+                  <div className="flex justify-between items-center border-b pb-2">
+                    <span className="font-medium">Afternoon</span>
+                    <span>Binghamton University Tour</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="font-medium">9:30 PM</span>
+                    <span>Return to Stuyvesant</span>
+                  </div>
+                </div>
               </div>
 
               <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border-t-4 border-purple-400">
                 <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  🎁 Bonus Materials
+                  💳 Payment & Lunch Info
                 </h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>• Campus map and guidebook</li>
-                  <li>• Snacks and refreshments</li>
-                  <li>• Junior Caucus resource packet</li>
-                  <li>• Contact information for follow-up questions</li>
-                  <li>• Group photo at iconic Cornell locations</li>
-                  <li>• Access to exclusive student insights</li>
-                </ul>
+                <div className="space-y-3 text-gray-600">
+                  <div>
+                    <p className="font-medium text-gray-800">
+                      Lunch Cost: ~$14.91 + tax
+                    </p>
+                    <p className="text-sm">Morrison Dining @ Cornell</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-800">
+                      Accepted Payments:
+                    </p>
+                    <ul className="text-sm space-y-1">
+                      <li>• VISA, MasterCard, AMEX</li>
+                      <li>• Apple Pay, Google Wallet</li>
+                      <li>• Cash (Vanna & Amy will exchange)</li>
+                    </ul>
+                  </div>
+                  <div className="bg-blue-50 p-3 rounded-lg mt-4">
+                    <p className="text-sm font-medium text-blue-800">
+                      Need 2 parent chaperones (attend free!)
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          {/* FAQ Section */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
-              Frequently Asked Questions
-            </h2>
-            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 space-y-6">
-              <div>
-                <h4 className="font-bold text-gray-800 mb-2">
-                  What should I wear?
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  Comfortable walking shoes and weather-appropriate clothing.
-                  We'll be walking for about 4 hours with some hills!
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800 mb-2">
-                  Can I bring my family?
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  Absolutely! Family members are welcome. Just make sure to
-                  register everyone who will be attending.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800 mb-2">
-                  What if it rains?
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  We have indoor alternatives and can provide some covered
-                  areas. Tours may be rescheduled in severe weather.
-                </p>
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800 mb-2">
-                  How do I cancel or reschedule?
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  Contact us at least 24 hours in advance for cancellations or
-                  rescheduling. Full refunds available with proper notice.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Final CTA */}
-          <div className="text-center">
-            <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Ready to Explore Cornell?
-              </h3>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Join us for an unforgettable tour experience and see why Cornell
-                students love their campus home!
-              </p>
-              <button
-                onClick={() =>
-                  handleExternalLink("https://forms.gle/signup-link")
-                }
-                className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 mr-4"
-              >
-                Reserve Your Spot
-              </button>
-              <button
-                onClick={() => handleNavigation("contact")}
-                className="border-2 border-gray-400 text-gray-600 px-8 py-3 rounded-lg font-semibold hover:border-gray-600 hover:text-gray-800 transition-all duration-300"
-              >
-                Ask a Question
-              </button>
             </div>
           </div>
         </div>
