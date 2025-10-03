@@ -56,64 +56,7 @@ const HomePage = () => {
                 on a tour of Cornell and Binghamton!
               </p>
             </div>
-            <div
-              onClick={() =>
-                handleExternalLink(
-                  "https://drive.google.com/drive/folders/1ObMiOvc2aZ8ydlR6RdTW6kin-KG8qJtN"
-                )
-              }
-              className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
-            >
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                Recent Newsletter
-              </h2>
-              <p className="text-gray-600">
-                Check out our recent back to school newsletter for more
-                information and updates!
-              </p>
-            </div>
-
-            <div
-              onClick={() =>
-                handleExternalLink(
-                  "https://docs.google.com/spreadsheets/d/1NrWs5V7ShNCsOqIRi7vlStpWKlh3_1i7c7zhBYPEZhE/edit?gid=0#gid=0"
-                )
-              }
-              className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-700 cursor-pointer group"
-            >
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                Speaker Event
-              </h2>
-              <p className="text-gray-600">
-                We will be a guest speaker event online
-                featuring Stuyvesant graduates who went on to have successful
-                college experiences and careers, including employees at FAANG
-                and graduates of numerous Ivy League institutions. This event is
-                a great opportunity to hear direct advice from people who were
-                once in your shoes.
-              </p>
-            </div>
-
-            <div
-              onClick={() =>
-                handleExternalLink(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSdbFz9No_iaJU9RUq-djeEDzrK0ZEOr37iBynzrxhB7mDUe7A/viewform"
-                )
-              }
-              className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-400 cursor-pointer group"
-            >
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                YTT Workshop
-              </h2>
-              <p className="text-gray-600">
-                Juniors! Are you stressed about junior year? Looking for a
-                professional when it comes to advice regarding college
-                applications? Or are you just a big fan of our goat JC from Y Tu
-                Tambien? Look no further because the Junior Caucus is hosting
-                our first YTT Workshop of the school year on October 1st @ 8:00
-                PM!
-              </p>
-            </div>
+            
 
             {/* END OF ANNOUNCEMENTS */}
 
