@@ -7,20 +7,6 @@ const EventsPage = () => {
 
   const upcomingEvents = [
     {
-      title: "Speaker Event",
-      date: "2025-09-28",
-      description:
-        "For the Sunday Workshop we will have Software Engineers from Google, Intuit, and Amazon. From the Business end we will have people from American Express and Goldman Zachs. We are still waiting to confirm some more panelists but we will have alumni from Columbia Engineering, Yale, Georgia Tech Cornell Engineering, Harvard Law and University of Chicago. More schools to be added. There will be a special focus on college and job interview prep",
-      link: "https://docs.google.com/spreadsheets/d/1NrWs5V7ShNCsOqIRi7vlStpWKlh3_1i7c7zhBYPEZhE/edit?gid=0#gid=0",
-    },
-    {
-      title: "YTT Workshop",
-      date: "2025-10-01",
-      description:
-        "Juniors! Are you stressed about junior year? Looking for a professional when it comes to advice regarding college applications? Or are you just a big fan of our goat JC from Y Tu Tambien? Look no further because the Junior Caucus is hosting our first YTT Workshop of the school year on October 1st @ 8:00 PM!",
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdbFz9No_iaJU9RUq-djeEDzrK0ZEOr37iBynzrxhB7mDUe7A/viewform?usp=header",
-    },
-    {
       title: "Cornell + Bing Tour",
       date: "2025-10-18",
       description: "Join us on our tour of Cornell and Binghamton.",

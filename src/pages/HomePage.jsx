@@ -36,14 +36,33 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+        {/*Annoucements */}
+        <div
+          onClick={() =>
+            handleExternalLink(
+              "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q"
+            )
+          }
+          className="mt-10 bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
+        >
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Cornell + Binghamton Tours
+          </h2>
+          <p className="text-gray-600">
+            Sign up by September 26 to join the Senior and Junior Caucuses on a
+            tour of Cornell and Binghamton!
+          </p>
+        </div>
+
         {/*Mission Statement + Presidents*/}
-        <div className="bg-white/90 relative h-[50vh] flex items-center justify-center">
-          <div className="px-4">
+        <div className="bg-white/90 relative min-h-[50vh] flex items-center justify-center py-12 md:py-0">
+          <div className="px-4 md:px-8">
             <div className="max-w-4xl">
-              <h1 className="text-5xl font-bold mb-6">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">
                 Mission Statement
               </h1>
-              <p className="text-lg ">
+              <p className="text-base md:text-lg">
                 The Junior Caucus aims to serve as a proactive and dedicated
                 body for the junior class, promoting community, collaboration,
                 and student engagement. By offering resources, hosting events,
@@ -55,44 +74,30 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
-        <div className="bg-pink-100/90 relative h-[50vh] flex items-center justify-center">
-          <div className="px-4">
-            <div className="max-w-5xl flex items-center gap-8">
+        <div className="bg-pink-100/90 relative min-h-[50vh] flex items-center justify-center py-12 md:py-0">
+          <div className="px-4 md:px-8">
+            <div className="max-w-5xl flex flex-col md:flex-row items-center gap-6 md:gap-8">
               <img
-                className="h-[30vh] w-[40vh] object-cover rounded-lg"
+                className="w-full max-w-xs md:max-w-none md:h-[30vh] md:w-[40vh] object-cover rounded-lg"
                 src="presidents.jpeg"
                 alt="Presidents"
               />
-              <div className="flex-1">
-                <h2 className="text-4xl font-bold mb-4">Meet Our Leadership</h2>
-                <p className="text-2xl ">Mufei Yu & Mitali Jhaveri<br></br>'25 - '26 Junior Caucus Presidents
+              <div className="flex-1 text-center md:text-left">
+                <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">
+                  Meet Our Leadership
+                </h2>
+                <p className="text-lg md:text-2xl">
+                  Mufei Yu & Mitali Jhaveri
+                  <br />
+                  '25 - '26 Junior Caucus Presidents
                 </p>
               </div>
             </div>
           </div>
         </div>
-
         {/* Content */}
         <div className="relative z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div
-              onClick={() =>
-                handleExternalLink(
-                  "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q"
-                )
-              }
-              className="bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
-            >
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                Cornell + Binghamton Tours
-              </h2>
-              <p className="text-gray-600">
-                Sign up by September 26 to join the Senior and Junior Caucuses
-                on a tour of Cornell and Binghamton!
-              </p>
-            </div>
-
             {/* END OF ANNOUNCEMENTS */}
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -153,7 +158,6 @@ const HomePage = () => {
           {/* Mission Statement and Cabinet Section */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid md:grid-cols-1 gap-8">
-
               <div
                 onClick={() => handleNavigation("cabinet")}
                 className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-300 cursor-pointer group"
