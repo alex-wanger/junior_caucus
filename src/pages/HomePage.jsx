@@ -36,6 +36,42 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        {/*Mission Statement + Presidents*/}
+        <div className="bg-white/90 relative h-[50vh] flex items-center justify-center">
+          <div className="px-4">
+            <div className="max-w-4xl">
+              <h1 className="text-5xl font-bold mb-6">
+                Mission Statement
+              </h1>
+              <p className="text-lg ">
+                The Junior Caucus aims to serve as a proactive and dedicated
+                body for the junior class, promoting community, collaboration,
+                and student engagement. By offering resources, hosting events,
+                and advocating for students, the Junior Caucus strives to create
+                a supportive environment where students can succeed
+                academically, connect socially, and enjoy a meaningful and
+                memorable junior year.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-pink-100/90 relative h-[50vh] flex items-center justify-center">
+          <div className="px-4">
+            <div className="max-w-5xl flex items-center gap-8">
+              <img
+                className="h-[30vh] w-[40vh] object-cover rounded-lg"
+                src="presidents.jpeg"
+                alt="Presidents"
+              />
+              <div className="flex-1">
+                <h2 className="text-4xl font-bold mb-4">Meet Our Leadership</h2>
+                <p className="text-2xl ">Mufei Yu & Mitali Jhaveri<br></br>'25 - '26 Junior Caucus Presidents
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* Content */}
         <div className="relative z-10">
@@ -56,7 +92,6 @@ const HomePage = () => {
                 on a tour of Cornell and Binghamton!
               </p>
             </div>
-            
 
             {/* END OF ANNOUNCEMENTS */}
 
@@ -73,6 +108,7 @@ const HomePage = () => {
                   support our class, ease the stress of junior year, and bring
                   our community together.
                 </p>
+
                 <div className="mt-4 text-pink-500 font-semibold">
                   Click to explore →
                 </div>
@@ -116,21 +152,7 @@ const HomePage = () => {
 
           {/* Mission Statement and Cabinet Section */}
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-500 cursor-pointer group">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-pink-600 transition-colors">
-                  Mission Statement (2025-2026)
-                </h3>
-                <p className="text-gray-600 group-hover:text-gray-700 transition-colors">
-                  The Junior Caucus aims to serve as a proactive and dedicated
-                  body for the junior class, promoting community, collaboration,
-                  and student engagement. By offering resources, hosting events,
-                  and advocating for students, the Junior Caucus strives to
-                  create a supportive environment where students can succeed
-                  academically, connect socially, and enjoy a meaningful and
-                  memorable junior year.
-                </p>
-              </div>
+            <div className="grid md:grid-cols-1 gap-8">
 
               <div
                 onClick={() => handleNavigation("cabinet")}
