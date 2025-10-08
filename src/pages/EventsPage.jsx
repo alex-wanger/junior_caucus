@@ -10,11 +10,24 @@ const EventsPage = () => {
       title: "Cornell + Bing Tour",
       date: "2025-10-18",
       description: "Join us on our tour of Cornell and Binghamton.",
-      link: "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAaeOFuiISibgxWbJmI3fse1meXco8NEQZZWXJDokrn9mnRJpelRUimKOcJkKdg_aem_O3nBHsWUegFq8lTUwpL0LA",
+      link: "/tours",
     },
   ];
 
-  const pastEvents = [{}, {}];
+  const pastEvents = [
+  {
+      title: "Speaker Event",
+      date: "2025-09-28",
+  },
+  {
+      title: "YTT - Letters of Rec",
+      date: "2025-10-01",
+  },
+  {
+      title: "Junior Atrium Polaroid Day",
+      date: "2025-10-07",
+  },
+];
 
   const allEvents = [...upcomingEvents, ...pastEvents];
 
