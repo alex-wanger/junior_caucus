@@ -12,6 +12,12 @@ const EventsPage = () => {
       description: "Join us on our tour of Cornell and Binghamton.",
       link: "/tours",
     },
+    {
+      title: "Meeting with the Deputy Director of Rice Admissions",
+      date: "2025-10-15",
+      description: "Join us at 5:30 PM on October 15th, open to all grades!",
+      link: "https://docs.google.com/spreadsheets/d/17H4eJlLtnnENil0qXnHfO4CGSB3NCiCFTcn2N8TGB20/edit?gid=0#gid=0",
+    },
   ];
 
   const pastEvents = [
