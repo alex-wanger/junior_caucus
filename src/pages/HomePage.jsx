@@ -20,7 +20,7 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="relative h-screen min-h-screen">
           <img
-            src="/junior_caucus_photo.jpg"
+            src="/Stuy_building.webp"
             alt="bg"
             className="w-full h-full min-h-screen object-cover"
           />
