@@ -85,6 +85,22 @@ const HomePage = () => {
 
               <div
                 onClick={() =>
+                  handleExternalLink("https://www.instagram.com/p/DPuqnljDbFT/")
+                }
+                className="mt-10 w-2/3 ml-auto mr-auto bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
+              >
+                <h2 className="text-3xl font-bold text-gray-800 mb-4">
+                  Open House Bakesale
+                </h2>
+                <p className="text-gray-600">
+                  Pull up to our bake sale during Open House!🧁🍪 Come grab a
+                  treat and support Junior Caucus to help make Junior Prom even
+                  sweeter! 🩷💜
+                </p>
+              </div>
+
+              <div
+                onClick={() =>
                   handleExternalLink(
                     "https://docs.google.com/forms/d/e/1FAIpQLSeRw4LcMpkDRZuCfRF7ZkMArAttmS8gqlpv3m2k_mcFe67Qaw/viewform"
                   )
