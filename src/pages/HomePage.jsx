@@ -65,57 +65,8 @@ const HomePage = () => {
                 </div>
               </div>
 
-              {/*Annoucements */}
-              <div
-                onClick={() =>
-                  handleExternalLink(
-                    "https://docs.google.com/forms/d/1oLdJawK8RRQwhgkSjOg3_XluVCfNxZoIsG8Msr8N2_Y/viewform?edit_requested=true&fbclid=PAZXh0bgNhZW0CMTEAAae7JxyBANPri1v_yf9M5bwERl-MWtuEJg04MyR7ncLw5S3pJyHJnAmEEBNf1A_aem_U1XaN5B7dYyHsy5ZJm_07Q"
-                  )
-                }
-                className="mt-10 w-2/3 ml-auto mr-auto bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
-              >
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  Cornell + Binghamton Tours
-                </h2>
-                <p className="text-gray-600">
-                  Sign up by September 26 to join the Senior and Junior Caucuses
-                  on a tour of Cornell and Binghamton!
-                </p>
-              </div>
 
-              <div
-                onClick={() =>
-                  handleExternalLink("https://www.instagram.com/p/DPuqnljDbFT/")
-                }
-                className="mt-10 w-2/3 ml-auto mr-auto bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-pink-400 cursor-pointer group"
-              >
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  Open House Bakesale
-                </h2>
-                <p className="text-gray-600">
-                  Pull up to our bake sale during Open House!🧁🍪 Come grab a
-                  treat and support Junior Caucus to help make Junior Prom even
-                  sweeter! 🩷💜
-                </p>
-              </div>
-
-              <div
-                onClick={() =>
-                  handleExternalLink(
-                    "https://docs.google.com/forms/d/e/1FAIpQLSeRw4LcMpkDRZuCfRF7ZkMArAttmS8gqlpv3m2k_mcFe67Qaw/viewform"
-                  )
-                }
-                className="mt-10 w-2/3 ml-auto mr-auto bg-white/90 backdrop-blur-sm rounded-xl mb-10 text-center shadow-lg p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 border-t-4 border-purple-400 cursor-pointer group"
-              >
-                <h2 className="text-3xl font-bold text-gray-800 mb-4">
-                  Halloween Event Form
-                </h2>
-                <p className="text-gray-600">
-                  With spooky season here, don't forget to fill out our
-                  Halloween event poll to make your voice heard!
-                </p>
-              </div>
-
+              
               {/*Mission Statement + Presidents*/}
               <div className="bg-white/90 relative min-h-[50vh] flex items-center justify-center py-12 md:py-0">
                 <div className="px-4 md:px-8">
