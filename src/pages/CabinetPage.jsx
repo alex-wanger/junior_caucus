@@ -22,6 +22,11 @@ const CabinetPage = () => {
           position: "Chief of Staff",
           image: "/adrien.webp",
         },
+        {
+          name: "Ashley Mui",
+          position: "Outreach Director",
+          image: "/ashley.webp",
+        },
       ],
     },
     {
@@ -96,11 +101,6 @@ const CabinetPage = () => {
           name: "Rachel Liu",
           position: "Outreach Director",
           image: "/IMG_1648 - Rachel Liu.webp",
-        },
-        {
-          name: "Ashley Mui",
-          position: "Outreach Director",
-          image: "/ashley.webp",
         },
       ],
     },
